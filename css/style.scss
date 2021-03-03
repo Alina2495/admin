@@ -58,3 +58,69 @@ $color4: #FFFFFF;
 select {
     background-color: #392DFF;
 }
+
+.form-search {
+    background-image: url('../img/icons/search.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
+.btn-show,
+.btn-edit,
+.btn-delete,
+.btn-img,
+.btn-img-close {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.56rem;
+    height: 1.56rem;
+}
+
+.btn-show {
+    background-image: url('../img/icons/btn-show.svg');
+    &[aria-expanded='true'] {
+        background-image: url('../img/icons/btn-hide.svg');
+    }
+}
+
+.btn-edit {
+    background-image: url('../img/icons/btn-edit.svg');
+}
+
+.btn-delete {
+    background-image: url('../img/icons/btn-delete.svg');
+}
+
+.btn-img {
+    background-image: url('../img/icons/btn-img.svg');
+}
+
+.btn-img-close {
+    background-image: url('../img/icons/btn-img-close.svg');
+}
+
+.border-dashed {
+    border: 1px dashed #909090;
+}
+
+.form-check-input {
+    z-index: 1;
+}
+
+.form-check-input:checked+.border,
+.modal-content {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photos-page {
+    .btn-img,
+    .btn-img-close {
+        right: 23px !important;
+    }
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}

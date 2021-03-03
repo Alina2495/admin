@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Admin</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="position-relative h-100">
 
-    <aside class="shadow-sm position-sticky bg-white top-0 bottom-0 start-0 h-100" style="width: 7rem;">
-        <nav>
-            <a href="index.html">
-                <svg width="88" height="18" viewBox="0 0 88 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="d-flex h-100">
+        <aside class="shadow-sm bg-white top-0 bottom-0 start-0 h-100 d-inline-block" style="width: 7rem;">
+            <nav>
+                <a href="index.html">
+                    <svg width="88" height="18" viewBox="0 0 88 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                     <path d="M13.6393 0L6.81967 18L0 0H5.44262L6.88525 5.34586L8.45902 0H13.6393Z" fill="#252525"/>
                     <path d="M20.0656 4.33081C21.705 4.33081 23.082 4.93983 24.2624 6.22555C25.4427 7.51126 26.0329 8.99998 26.0329 10.7594C26.0329 12.5864 25.4427 14.0752 24.2624 15.3609C23.082 16.6466 21.6394 17.2556 20.0001 17.2556C18.3607 17.2556 16.9181 16.6466 15.7378 15.3609C14.5574 14.0752 13.9673 12.5864 13.9673 10.7594C13.9673 8.93231 14.5574 7.37592 15.7378 6.15788C16.9181 4.93983 18.2952 4.33081 20.0656 4.33081ZM19.9345 8.93231C19.4755 8.93231 19.082 9.13532 18.7542 9.47367C18.4263 9.81201 18.2952 10.2857 18.2952 10.8271C18.2952 11.3684 18.4263 11.7744 18.7542 12.1804C19.082 12.5864 19.4755 12.7218 19.9345 12.7218C20.3935 12.7218 20.787 12.5188 21.1148 12.1804C21.4427 11.8421 21.5738 11.3684 21.5738 10.8271C21.5738 10.2857 21.4427 9.87968 21.1148 9.47367C20.787 9.06765 20.3935 8.93231 19.9345 8.93231Z" fill="#252525"/>
@@ -30,16 +32,200 @@
                     </clipPath>
                     </defs>
             </svg>
-            </a>
-        </nav>
+                </a>
+                лево
+            </nav>
 
-    </aside>
+        </aside>
+        <div>
+            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block ps-5 d-flex align-items-center" style="height: 4rem;">
+                <div class="d-inline-block" style="width: 19rem;">
+                    <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
+                    <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                </datalist>
+                </div>
+                <button class="btn btn-link p-0 ms-5">
+                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5821 2.68817H9.9647C9.53533 1.41293 8.32913 0.491577 6.91095 0.491577C5.49276 0.491577 4.28656 1.41293 3.8572 2.68817H1.41943C0.853144 2.68817 0.394043 3.14727 0.394043 3.71356C0.394043 4.27985 0.853144 4.73895 1.41943 4.73895H3.85727C4.28663 6.01419 5.49283 6.93554 6.91102 6.93554C8.3292 6.93554 9.5354 6.01419 9.96477 4.73895H25.5822C26.1485 4.73895 26.6076 4.27985 26.6076 3.71356C26.6076 3.14727 26.1485 2.68817 25.5821 2.68817ZM6.91095 4.88476C6.26516 4.88476 5.73975 4.35935 5.73975 3.71356C5.73975 3.06777 6.26516 2.54236 6.91095 2.54236C7.55674 2.54236 8.08215 3.06777 8.08215 3.71356C8.08215 4.35935 7.55674 4.88476 6.91095 4.88476Z" fill="#909090"/>
+            <path d="M25.5821 11.4747H23.1443C22.715 10.1994 21.5087 9.27808 20.0906 9.27808C18.6725 9.27808 17.4662 10.1994 17.0369 11.4747H1.41943C0.853144 11.4747 0.394043 11.9338 0.394043 12.5001C0.394043 13.0663 0.853144 13.5254 1.41943 13.5254H17.0369C17.4662 14.8007 18.6725 15.722 20.0906 15.722C21.5087 15.722 22.715 14.8007 23.1444 13.5254H25.5822C26.1485 13.5254 26.6076 13.0663 26.6076 12.5001C26.6076 11.9338 26.1485 11.4747 25.5821 11.4747ZM20.0906 13.6713C19.4448 13.6713 18.9194 13.1458 18.9194 12.5001C18.9194 11.8543 19.4448 11.3289 20.0906 11.3289C20.7364 11.3289 21.2618 11.8543 21.2618 12.5001C21.2618 13.1458 20.7364 13.6713 20.0906 13.6713Z" fill="#909090"/>
+            <path d="M25.5821 20.261H14.3579C13.9286 18.9858 12.7224 18.0645 11.3042 18.0645C9.88602 18.0645 8.67982 18.9858 8.25045 20.261H1.41943C0.853144 20.261 0.394043 20.7201 0.394043 21.2864C0.394043 21.8527 0.853144 22.3118 1.41943 22.3118H8.25045C8.67982 23.5871 9.88602 24.5084 11.3042 24.5084C12.7224 24.5084 13.9286 23.5871 14.3579 22.3118H25.5822C26.1485 22.3118 26.6076 21.8527 26.6076 21.2864C26.6076 20.7201 26.1485 20.261 25.5821 20.261ZM11.3042 22.4577C10.6584 22.4577 10.133 21.9323 10.133 21.2865C10.133 20.6407 10.6584 20.1153 11.3042 20.1153C11.95 20.1153 12.4754 20.6406 12.4754 21.2864C12.4754 21.9322 11.95 22.4577 11.3042 22.4577Z" fill="#909090"/>
+                </svg>
+            </button>
+            </nav>
 
+            <div>
+                <div class="d-flex">
+                    <article class="bg-white mt-4 ms-4" style="width: 78rem; height: 55rem;">
+                        <div class="d-flex align-items-center justify-content-between py-2 px-4 border-bottom">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb fw-bold mb-0">
+                                    <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                                    <li class="breadcrumb-item active fw-normal" aria-current="page">Список</li>
+                                </ol>
+                            </nav>
 
-    <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                            <select class="form-select border-0 fs-5 w-auto">
+                                <option value="1" selected>Показывать по 20</option>
+                                <option value="2">Показывать по 30</option>
+                            </select>
+                        </div>
+                        <div>
+
+                            <div class="d-flex fs-5 p-4">
+                                <div class="col-7 ms-4">Название</div>
+                                <div class="col-1">Кол-во</div>
+                                <div class="col-2 ms-4">Статус</div>
+                            </div>
+
+                            <div class="rounded border m-4 mt-0 overflow-scroll" style="height: 46rem;">
+
+                                <div>
+                                    <div class="d-flex border-bottom p-3">
+                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+                                        <div class="col-7">Для влюбленных</div>
+                                        <div class="col-1 text-center">1</div>
+                                        <div class="col-2">Отображается</div>
+                                        <div class="ms-auto col-1 d-flex justify-content-end">
+                                            <button class="btn btn-link btn-edit p-1"></button>
+                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="d-flex border-bottom p-3">
+                                            <button class="btn btn-link btn-show p-1"></button>
+                                            <div>Для влюбленных</div>
+                                            <div>1</div>
+                                            <div>Отображается</div>
+                                            <button class="btn btn-link btn-edit p-1"></button>
+                                            <button class="btn btn-link btn-delete p-1"></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="bg-white mt-4 ms-4 py-5 px-4 d-flex flex-column" style="width: 27rem; height: 55rem;">
+
+                        <div class="mb-auto">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
+                            </div>
+
+                            <select class="form-select mb-3">
+                            <option value="1" selected>Главная категория</option>
+                            <option value="2">Категория 2</option>
+                            <option value="3">Категория 3</option>
+                        </select>
+
+                            <select class="form-select mb-3">
+                            <option value="1" selected>Вкусные подарки Любовь</option>
+                            <option value="2">Категория 2</option>
+                            <option value="3">Категория 3</option>
+                        </select>
+
+                            <select class="form-select mb-3">
+                            <option value="1" selected>Другое</option>
+                            <option value="2">Другое 2</option>
+                            <option value="3">Другое 3</option>
+                        </select>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <label for="" class="form-label w-50 mb-0">Акция</label>
+                                <input type="text" class="form-control text-end w-50" value="2">
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <label for="" class="form-label w-50 mb-0">Порядковый номер</label>
+                                <select class="form-select w-50">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+
+                            <div class="form-check form-switch mb-3 ps-0">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Статус</label>
+                                <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span>Дата изменения</span>
+                                <span class="text-muted">24.02.21</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto">
+                            <div class="d-flex">
+                                <button class="btn btn-outline-primary me-auto px-5">Сохранить</button>
+                                <button class="btn btn-outline-primary">Посмотреть</button>
+                            </div>
+                            <button class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</button>
+                        </div>
+
+                    </aside>
+                </div>
+                <footer class="bg-white mt-3 ms-4 w-100 d-flex align-items-center ps-3 pe-5" style="height: 4rem;">
+                    <div>Выбрано: 4 элемента</div>
+
+                    <div class="d-flex align-items-center ms-5">
+                        <label for="" class="form-label mb-0 me-3 text-nowrap">Перенести в</label>
+                        <select class="form-select" style="width: 10.9rem;">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center ms-5">
+                        <label for="" class="form-label mb-0 me-3 text-nowrap">Акции</label>
+                        <select class="form-select" style="width: 10.9rem;">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <nav aria-label="..." class="ms-auto">
+                        <ul class="pagination mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <svg class="me-3" width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.823 2.22601L3.72351 7.19851L8.823 12.171L7.25307 13.6985L0.572511 7.19851L7.25307 0.698509L8.823 2.22601Z" fill="#303030"/>
+                                    </svg><span>Назад</span></a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">785</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <span>Далее</span><svg class="ms-3" width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.806152 2.14948L5.90564 7.12198L0.806153 12.0945L2.37608 13.622L9.05664 7.12198L2.37608 0.621979L0.806152 2.14948Z" fill="#392DFF"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </footer>
+
+            </div>
+        </div>
+
     </div>
+
+
+    <script src="js/bootstrap.js"></script>
+
 </body>
 
 </html>
