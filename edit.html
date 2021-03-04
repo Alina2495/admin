@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Edit</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="position-relative h-100">
+
+    <div class="d-flex h-100">
+        <aside class="shadow-sm bg-white top-0 bottom-0 start-0 h-100 d-inline-block" style="width: 7rem;">
+            <nav>
+                <a href="index.html">
+                    <svg width="88" height="18" viewBox="0 0 88 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M13.6393 0L6.81967 18L0 0H5.44262L6.88525 5.34586L8.45902 0H13.6393Z" fill="#252525"/>
+                    <path d="M20.0656 4.33081C21.705 4.33081 23.082 4.93983 24.2624 6.22555C25.4427 7.51126 26.0329 8.99998 26.0329 10.7594C26.0329 12.5864 25.4427 14.0752 24.2624 15.3609C23.082 16.6466 21.6394 17.2556 20.0001 17.2556C18.3607 17.2556 16.9181 16.6466 15.7378 15.3609C14.5574 14.0752 13.9673 12.5864 13.9673 10.7594C13.9673 8.93231 14.5574 7.37592 15.7378 6.15788C16.9181 4.93983 18.2952 4.33081 20.0656 4.33081ZM19.9345 8.93231C19.4755 8.93231 19.082 9.13532 18.7542 9.47367C18.4263 9.81201 18.2952 10.2857 18.2952 10.8271C18.2952 11.3684 18.4263 11.7744 18.7542 12.1804C19.082 12.5864 19.4755 12.7218 19.9345 12.7218C20.3935 12.7218 20.787 12.5188 21.1148 12.1804C21.4427 11.8421 21.5738 11.3684 21.5738 10.8271C21.5738 10.2857 21.4427 9.87968 21.1148 9.47367C20.787 9.06765 20.3935 8.93231 19.9345 8.93231Z" fill="#252525"/>
+                    <path d="M33.5083 4.33081C35.1476 4.33081 36.5247 4.93983 37.705 6.22555C38.8853 7.51126 39.4755 8.99998 39.4755 10.7594C39.4755 12.5864 38.8853 14.0752 37.705 15.3609C36.5247 16.6466 35.082 17.2556 33.4427 17.2556C31.8034 17.2556 30.3607 16.6466 29.1804 15.3609C28.0001 14.0752 27.4099 12.5864 27.4099 10.7594C27.4099 8.93231 28.0001 7.37592 29.1804 6.15788C30.3607 4.93983 31.7378 4.33081 33.5083 4.33081ZM33.3771 8.93231C32.9181 8.93231 32.5247 9.13532 32.1968 9.47367C31.8689 9.81201 31.7378 10.2857 31.7378 10.8271C31.7378 11.3684 31.8689 11.7744 32.1968 12.1804C32.5247 12.5864 32.9181 12.7218 33.3771 12.7218C33.8361 12.7218 34.2296 12.5188 34.5575 12.1804C34.8853 11.8421 35.0165 11.3684 35.0165 10.8271C35.0165 10.2857 34.8853 9.87968 34.5575 9.47367C34.2296 9.06765 33.8361 8.93231 33.3771 8.93231Z" fill="#252525"/>
+                    <path d="M44.6557 11.436C45.377 11.436 46.0328 11.7067 46.6229 12.3157C47.1475 12.9248 47.4098 13.6014 47.4098 14.4135C47.4098 15.2255 47.1475 15.9022 46.6229 16.5112C46.0983 17.1202 45.4426 17.3909 44.6557 17.3909C43.8688 17.3909 43.2131 17.1202 42.6885 16.5789C42.1639 16.0375 41.9016 15.2932 41.9016 14.4811C41.9016 13.6691 42.1639 12.9248 42.6885 12.3834C43.2787 11.7744 43.8688 11.436 44.6557 11.436Z" fill="#EC6446"/>
+                    <path d="M62.2294 0L55.4098 18L48.5901 0H54.0327L55.4753 5.34586L57.0491 0H62.2294Z" fill="#252525"/>
+                    <path d="M68.6557 4.33081C70.2951 4.33081 71.6721 4.93983 72.8525 6.22555C74.0328 7.51126 74.6229 8.99998 74.6229 10.7594C74.6229 12.5864 74.0328 14.0752 72.8525 15.3609C71.6721 16.6466 70.2295 17.2556 68.5902 17.2556C66.9508 17.2556 65.5082 16.6466 64.3279 15.3609C63.1475 14.0752 62.5574 12.5864 62.5574 10.7594C62.5574 8.93231 63.1475 7.37592 64.3279 6.15788C65.5082 4.93983 66.8852 4.33081 68.6557 4.33081ZM68.5246 8.93231C68.0656 8.93231 67.6721 9.13532 67.3443 9.47367C67.0164 9.81201 66.8852 10.2857 66.8852 10.8271C66.8852 11.3684 67.0164 11.7744 67.3443 12.1804C67.6721 12.5864 68.0656 12.7218 68.5246 12.7218C68.9836 12.7218 69.377 12.5188 69.7049 12.1804C70.0328 11.8421 70.1639 11.3684 70.1639 10.8271C70.1639 10.2857 70.0328 9.87968 69.7049 9.47367C69.377 9.06765 68.9836 8.93231 68.5246 8.93231Z" fill="#252525"/>
+                    <path d="M82.0984 4.33081C83.7377 4.33081 85.1148 4.93983 86.2951 6.22555C87.4754 7.51126 88.0656 8.99998 88.0656 10.7594C88.0656 12.5864 87.4754 14.0752 86.2951 15.3609C85.1148 16.6466 83.6721 17.2556 82.0328 17.2556C80.3934 17.2556 78.9508 16.6466 77.7705 15.3609C76.5902 14.0752 76 12.5864 76 10.7594C76 8.93231 76.5902 7.37592 77.7705 6.15788C78.9508 4.93983 80.3279 4.33081 82.0984 4.33081ZM81.9672 8.93231C81.5082 8.93231 81.1148 9.13532 80.7869 9.47367C80.459 9.81201 80.3279 10.2857 80.3279 10.8271C80.3279 11.3684 80.459 11.7744 80.7869 12.1804C81.1148 12.5864 81.5082 12.7218 81.9672 12.7218C82.4262 12.7218 82.8197 12.5188 83.1475 12.1804C83.4754 11.8421 83.6066 11.3684 83.6066 10.8271C83.6066 10.2857 83.4754 9.87968 83.1475 9.47367C82.8197 9.06765 82.4262 8.93231 81.9672 8.93231Z" fill="#252525"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="88" height="18" fill="white"/>
+                    </clipPath>
+                    </defs>
+            </svg>
+                </a>
+                лево
+            </nav>
+
+        </aside>
+        <div>
+            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block ps-5 d-flex align-items-center" style="height: 4rem;">
+                <div class="d-inline-block" style="width: 19rem;">
+                    <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
+                    <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                </datalist>
+                </div>
+                <button class="btn btn-link p-0 ms-5">
+                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5821 2.68817H9.9647C9.53533 1.41293 8.32913 0.491577 6.91095 0.491577C5.49276 0.491577 4.28656 1.41293 3.8572 2.68817H1.41943C0.853144 2.68817 0.394043 3.14727 0.394043 3.71356C0.394043 4.27985 0.853144 4.73895 1.41943 4.73895H3.85727C4.28663 6.01419 5.49283 6.93554 6.91102 6.93554C8.3292 6.93554 9.5354 6.01419 9.96477 4.73895H25.5822C26.1485 4.73895 26.6076 4.27985 26.6076 3.71356C26.6076 3.14727 26.1485 2.68817 25.5821 2.68817ZM6.91095 4.88476C6.26516 4.88476 5.73975 4.35935 5.73975 3.71356C5.73975 3.06777 6.26516 2.54236 6.91095 2.54236C7.55674 2.54236 8.08215 3.06777 8.08215 3.71356C8.08215 4.35935 7.55674 4.88476 6.91095 4.88476Z" fill="#909090"/>
+            <path d="M25.5821 11.4747H23.1443C22.715 10.1994 21.5087 9.27808 20.0906 9.27808C18.6725 9.27808 17.4662 10.1994 17.0369 11.4747H1.41943C0.853144 11.4747 0.394043 11.9338 0.394043 12.5001C0.394043 13.0663 0.853144 13.5254 1.41943 13.5254H17.0369C17.4662 14.8007 18.6725 15.722 20.0906 15.722C21.5087 15.722 22.715 14.8007 23.1444 13.5254H25.5822C26.1485 13.5254 26.6076 13.0663 26.6076 12.5001C26.6076 11.9338 26.1485 11.4747 25.5821 11.4747ZM20.0906 13.6713C19.4448 13.6713 18.9194 13.1458 18.9194 12.5001C18.9194 11.8543 19.4448 11.3289 20.0906 11.3289C20.7364 11.3289 21.2618 11.8543 21.2618 12.5001C21.2618 13.1458 20.7364 13.6713 20.0906 13.6713Z" fill="#909090"/>
+            <path d="M25.5821 20.261H14.3579C13.9286 18.9858 12.7224 18.0645 11.3042 18.0645C9.88602 18.0645 8.67982 18.9858 8.25045 20.261H1.41943C0.853144 20.261 0.394043 20.7201 0.394043 21.2864C0.394043 21.8527 0.853144 22.3118 1.41943 22.3118H8.25045C8.67982 23.5871 9.88602 24.5084 11.3042 24.5084C12.7224 24.5084 13.9286 23.5871 14.3579 22.3118H25.5822C26.1485 22.3118 26.6076 21.8527 26.6076 21.2864C26.6076 20.7201 26.1485 20.261 25.5821 20.261ZM11.3042 22.4577C10.6584 22.4577 10.133 21.9323 10.133 21.2865C10.133 20.6407 10.6584 20.1153 11.3042 20.1153C11.95 20.1153 12.4754 20.6406 12.4754 21.2864C12.4754 21.9322 11.95 22.4577 11.3042 22.4577Z" fill="#909090"/>
+                </svg>
+            </button>
+            </nav>
+
+            <div>
+                <div class="d-flex">
+                    <article class="bg-white mt-4 ms-4" style="width: 106rem; height: 55rem;">
+                        <div class="py-2 px-4 border-bottom">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb fw-bold mb-0">
+                                    <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Список</a></li>
+                                    <li class="breadcrumb-item active fw-normal" aria-current="page">Редактировать</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+
+                        <div class=" px-5 pt-4">
+                            <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="characteristics-tab" data-bs-toggle="tab" data-bs-target="#characteristics" type="button" role="tab" aria-controls="characteristics" aria-selected="true">Характеристики</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="options-tab" data-bs-toggle="tab" data-bs-target="#options" type="button" role="tab" aria-controls="options" aria-selected="false">Параметры</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo" type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content pt-5" id="myTabContent">
+                                <div class="tab-pane fade show active d-flx" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
+                                    <div class="d-flex">
+                                        <div class="col-5 pe-5">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
+                                            </div>
+                                            <select class="form-select mb-3">
+                                            <option value="1" selected>Категория</option>
+                                            <option value="2">Категория 2</option>
+                                            <option value="3">Категория 3</option>
+                                        </select>
+                                            <select class="form-select mb-3">
+                                            <option value="1" selected>Акции</option>
+                                            <option value="2">Категория 2</option>
+                                            <option value="3">Категория 3</option>
+                                        </select>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <label for="" class="form-label w-50 mb-0">Порядковый номер</label>
+                                                <select class="form-select w-50">
+                                            <option value="1" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                            </div>
+                                            <div class="form-check form-switch mb-3 ps-0">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">Статус</label>
+                                                <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                            </div>
+
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span>Дата изменения</span>
+                                                <span class="text-muted">24.02.21</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-5">
+                                            <div class="h2">Фото</div>
+                                            <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Основное</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="plug-tab" data-bs-toggle="tab" data-bs-target="#plug" type="button" role="tab" aria-controls="plug" aria-selected="false">Заглушки</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content pt-5" id="myTabContent">
+                                                <div class="tab-pane fade show active d-fle" id="main" role="tabpanel" aria-labelledby="main-tab">
+                                                    <div class="mb-3">
+                                                        <span class="text-muted me-4">нажмите</span>
+                                                        <button class="btn btn-primary">Загрузить</button>
+                                                    </div>
+                                                    <div class="border-dashed col-6 text-center text-muted d-flex flex-column align-items-center py-5">
+                                                        <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M54.1567 17.8931C51.1526 5.92548 39.0158 -1.34077 27.0482 1.66337C17.6959 4.01111 10.905 12.0942 10.2053 21.7113C3.56472 22.8064 -0.930829 29.0773 0.164276 35.7179C1.13777 41.6214 6.25317 45.9449 12.2363 45.9211H22.3915V41.8591H12.2363C7.74953 41.8591 4.11221 38.2217 4.11221 33.735C4.11221 29.2482 7.74953 25.6108 12.2363 25.6108C13.3581 25.6108 14.2674 24.7016 14.2674 23.5798C14.2572 13.4845 22.433 5.29231 32.5283 5.28228C41.2673 5.27352 48.7901 11.4517 50.4806 20.0255C50.6475 20.8816 51.3422 21.5356 52.2069 21.6503C57.7595 22.441 61.6196 27.5832 60.829 33.1357C60.1191 38.1216 55.862 41.8339 50.8258 41.8591H42.7017V45.9211H50.8258C58.6778 45.8974 65.0237 39.5128 64.9999 31.6609C64.9801 25.1248 60.5062 19.4441 54.1567 17.8931Z" fill="#392DFF"/>
+                                                            <path d="M31.1048 26.2L22.9807 34.3241L25.8445 37.1878L30.5158 32.5368V52.0143H34.5779V32.5368L39.2289 37.1878L42.0927 34.3241L33.9686 26.2C33.1763 25.4124 31.897 25.4124 31.1048 26.2Z" fill="#392DFF"/>
+                                                        </svg>
+                                                        <span class="mt-4 mb-5">или <span class="fw-bold">перетащите фотографию</span></span>
+                                                        <span>800 х 600</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="tab-pane fade" id="plug" role="tabpanel" aria-labelledby="plug-tab">...</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="options" role="tabpanel" aria-labelledby="options-tab">
+
+                                    <button class="btn-dark">Добавить группу</button>
+
+                                    <span class="text-muted fs-4 me-3">Название параметра</span>
+                                    <button class="btn btn-primary">Добавить</button>
+
+                                    <div class="d-flex">
+                                        <ul class="nav nav-tabs fw-medium col-6" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="option-1" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
+                                            </li>
+
+
+                                        </ul>
+
+                                        <div class="tab-content pt-5 col-6" id="myTabContent">
+                                            <div class="tab-pane fade show active d-flx" id="option-1" role="tabpanel" aria-labelledby="option-1-tab">
+                                                27 дюймов
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-tab">
+
+                                    <div class="col-6 overflow-aut" style="height: 40rem;">
+
+                                        <div class="mb-5">
+                                            <label for="exampleFormControlTextarea1" class="form-label position-relative">
+                                                <span class="fs-4">Title</span>
+                                                <svg class="position-absolute" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="6" cy="6" r="6" fill="#3B2FFF"/>
+                                                    <path d="M6.02238 2.3C6.46905 2.3 6.86572 2.37 7.21238 2.51C7.55905 2.64333 7.83238 2.84 8.03238 3.1C8.23238 3.36 8.33238 3.67333 8.33238 4.04C8.33238 4.44 8.24572 4.77 8.07238 5.03C7.90572 5.29 7.67905 5.49 7.39238 5.63C7.10572 5.77 6.78905 5.85667 6.44238 5.89L6.41238 6.9H5.38238V5.39C6.03572 5.31 6.49905 5.17667 6.77238 4.99C7.05238 4.79667 7.19238 4.52667 7.19238 4.18C7.19238 3.89333 7.08905 3.66667 6.88238 3.5C6.68238 3.32667 6.37238 3.24 5.95238 3.24C5.55905 3.24 5.23905 3.35 4.99238 3.57C4.74572 3.79 4.59905 4.09667 4.55238 4.49L3.56238 4.04C3.67572 3.52667 3.93905 3.11 4.35238 2.79C4.77238 2.46333 5.32905 2.3 6.02238 2.3ZM5.90238 7.67C6.12905 7.67 6.30905 7.73667 6.44238 7.87C6.57572 7.99667 6.64238 8.16667 6.64238 8.38C6.64238 8.6 6.57572 8.77333 6.44238 8.9C6.30905 9.02667 6.12905 9.09 5.90238 9.09C5.66905 9.09 5.48572 9.02667 5.35238 8.9C5.21905 8.77333 5.15238 8.6 5.15238 8.38C5.15238 8.16667 5.21905 7.99667 5.35238 7.87C5.48572 7.73667 5.66905 7.67 5.90238 7.67Z" fill="white"/>
+                                                </svg>
+                                                <div class="bg-white shadow small position-absolute hint">
+                                                    <div class="small text-muted p-3" style="width: 14rem;">
+                                                        <div class="small">
+                                                        Остались вопросы? Выберите свой вопрос, 
+                                                    выберите свой вопрос, выберите свой вопрос,
+                                                    выберите свой вопрос, выберите свой вопрос</div>
+                                                    </div>
+                                                </div>
+                                            </label>
+
+                                            <div class="d-flex mb-2 text-muted">
+                                                <span>Шаблон</span>
+                                                <div class="form-check form-switch ps-0 mx-4">
+                                                    <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                                </div>
+                                                <span>Вручную</span>
+                                            </div>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+
+                                        <div class="mb-5">
+                                            <label for="exampleFormControlTextarea1" class="form-label fs-4">Description</label>
+                                            <div class="d-flex mb-2 text-muted">
+                                                <span>Шаблон</span>
+                                                <div class="form-check form-switch ps-0 mx-4">
+                                                    <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                                </div>
+                                                <span>Вручную</span>
+                                            </div>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+
+                                        <div class="mb-5">
+                                            <label for="exampleFormControlTextarea1" class="form-label fs-4">Keywords</label>
+                                            <div class="d-flex mb-2 text-muted">
+                                                <span>Шаблон</span>
+                                                <div class="form-check form-switch ps-0 mx-4">
+                                                    <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                                </div>
+                                                <span>Вручную</span>
+                                            </div>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                        <div class="mb-5">
+                                            <label for="exampleFormControlTextarea1" class="form-label fs-4">URL</label>
+                                            <div class="d-flex mb-2 text-muted">
+                                                <span>Шаблон</span>
+                                                <div class="form-check form-switch ps-0 mx-4">
+                                                    <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                                </div>
+                                                <span>Вручную</span>
+                                            </div>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

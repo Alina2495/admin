@@ -62,6 +62,16 @@ select {
   right: 23px !important;
 }
 
+.hint {
+  top: -100px;
+  right: -230px;
+  display: none;
+}
+
+.form-label:hover .hint {
+  display: block;
+}
+
 img {
   object-fit: cover;
   object-position: center;
