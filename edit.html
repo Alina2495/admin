@@ -157,10 +157,19 @@
 
                                 <div class="tab-pane fade" id="options" role="tabpanel" aria-labelledby="options-tab">
 
-                                    <button class="btn-dark">Добавить группу</button>
 
-                                    <span class="text-muted fs-4 me-3">Название параметра</span>
-                                    <button class="btn btn-primary">Добавить</button>
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
+
+                                    <div>
+                                        <span class="text-muted fs-4 me-3">Название параметра</span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
+                                    </div>
+                                    <div>
+                                        <span class="text-muted fs-4 me-3">Значение параметра</span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
+                                    </div>
+
 
                                     <div class="d-flex">
                                         <ul class="nav nav-tabs fw-medium col-6" id="myTab" role="tablist">
@@ -246,16 +255,31 @@
                                             </div>
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div>
-
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
-
-
                     </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addGroupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addGroupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addGroupModalLabel">Добавить группу</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <span>Добавить группу</span>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </div>
         </div>
