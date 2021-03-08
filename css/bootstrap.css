@@ -2301,10 +2301,10 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #86b7fe;
+  border-color: #392DFF;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(59, 47, 255, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(59, 47, 255, 0.5);
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2511,10 +2511,10 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-  border-color: #86b7fe;
+  border-color: #392DFF;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(59, 47, 255, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(59, 47, 255, 0.5);
 }
 
 .form-select[multiple],
@@ -3226,17 +3226,17 @@ fieldset:disabled .btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background: -webkit-gradient(linear, left top, right top, from(#6C63FF), to(#392DFF));
+  background: linear-gradient(90deg, #6C63FF 0%, #392DFF 100%);
 }
 
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  background: -webkit-gradient(linear, left top, right top, from(#6C63FF), to(#392DFF));
+  background: linear-gradient(90deg, #6C63FF 0%, #392DFF 100%);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.5);
 }
 
 .btn-check:checked + .btn-primary,
@@ -3601,14 +3601,15 @@ fieldset:disabled .btn {
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background: -webkit-gradient(linear, left top, right top, from(#6C63FF), to(#392DFF));
+  background: linear-gradient(90deg, #6C63FF 0%, #392DFF 100%);
+  border-color: #3B2FFF;
 }
 
 .btn-check:focus + .btn-outline-primary,
 .btn-outline-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(59, 47, 255, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(59, 47, 255, 0.5);
 }
 
 .btn-check:checked + .btn-outline-primary,

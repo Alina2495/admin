@@ -1,3 +1,7 @@
+body {
+  width: 1920px;
+}
+
 .navigation {
   width: 6.25rem;
 }
@@ -127,8 +131,8 @@
 }
 
 .hint {
-  top: -100px;
-  right: -230px;
+  top: 10px;
+  right: -235px;
   display: none;
 }
 

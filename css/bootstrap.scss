@@ -2049,9 +2049,9 @@ progress {
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #86b7fe;
+    border-color: #392DFF;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(#3B2FFF, 0.5);
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2246,9 +2246,9 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-    border-color: #86b7fe;
+    border-color: #392DFF;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(#3B2FFF, 0.5);
 }
 
 .form-select[multiple],
@@ -2918,16 +2918,14 @@ fieldset:disabled .btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background: linear-gradient(90deg, #6C63FF 0%, #392DFF 100%);
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+    background: linear-gradient(90deg, #6C63FF 0%, #392DFF 100%);
+    box-shadow: 0 0 0 0.25rem rgba(#6C63FF, 0.5);
 }
 
 .btn-check:checked+.btn-primary,
@@ -3277,13 +3275,13 @@ fieldset:disabled .btn {
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background: linear-gradient(90deg, #6C63FF 0%, #392DFF 100%);
+    border-color: #3B2FFF;
 }
 
 .btn-check:focus+.btn-outline-primary,
 .btn-outline-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+    box-shadow: 0 0 0 0.25rem rgba(#3B2FFF, 0.5);
 }
 
 .btn-check:checked+.btn-outline-primary,
