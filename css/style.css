@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 1920px;
 }
@@ -112,7 +113,7 @@ body {
   z-index: 1;
 }
 
-.form-check-input:checked + .border,
+.form-check-input:checked + .box,
 .modal-content {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -185,7 +186,20 @@ img {
   background-color: transparent;
 }
 
-.form-check-input:checked + .border {
+.form-check-input:checked + .box {
   background-color: rgba(108, 99, 255, 0.2);
+}
+
+.promo {
+  margin-top: -1px;
+}
+
+.status-state:before {
+  content: 'Скрыт';
+}
+
+#status-switch:checked + .status-state:before {
+  color: #3B2FFF;
+  content: 'Активен';
 }
 /*# sourceMappingURL=style.css.map */
