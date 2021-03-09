@@ -66,16 +66,18 @@ body {
     background-repeat: no-repeat;
 }
 
-.btn-show,
-.btn-edit,
-.btn-delete,
-.btn-img,
-.btn-img-close {
+.btn-link {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 1.56rem;
     height: 1.56rem;
+}
+
+.btn-filter {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-image: url('../img/icons/btn-filter.svg');
 }
 
 .btn-show {
@@ -91,6 +93,12 @@ body {
 
 .btn-delete {
     background-image: url('../img/icons/btn-delete.svg');
+}
+
+.btn-delete-2 {
+    background-image: url('../img/icons/btn-delete-2.svg');
+    width: 0.75rem;
+    height: 0.75rem;
 }
 
 .btn-img {
@@ -171,7 +179,7 @@ img {
 }
 
 .overflow-auto-hidden {
-    overflow-y: scroll;
+    // overflow-y: scroll;
     overflow-x: visible;
     &::-webkit-scrollbar {
         width: 0px;
@@ -180,11 +188,11 @@ img {
     }
 }
 
-.form-check-input:checked+.box {
+.form-check-input:checked+.box-2 {
     background-color: rgba($color5, 0.2);
 }
 
-.promo {
+.box-2 {
     margin-top: -1px;
 }
 
@@ -195,4 +203,9 @@ img {
 #status-switch:checked+.status-state:before {
     color: $color1;
     content: 'Активен';
+}
+
+input[type=file] {
+    opacity: 0;
+    cursor: pointer;
 }

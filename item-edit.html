@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Edit</title>
+    <title>Редактирование чего-то</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +20,7 @@
 
 
             <div class="nav-item mx-auto">
-                <div class="nav-link active text-center px-0">
+                <div class="nav-link text-center px-0">
                     <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link" href="folders.html">
+                    <a class="nav-link active" href="items.html">
                         <img class="nav-icon" src="img/icons/icon3.svg">
                         <span>Товары</span>
                     </a>
@@ -108,20 +108,14 @@
                 <div class="d-inline-block" style="width: 19rem;">
                     <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
                     <datalist id="datalistOptions">
-                    <option value="San Francisco">
-                    <option value="New York">
-                    <option value="Seattle">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                </datalist>
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
                 </div>
-                <button class="btn btn-link p-0 ms-5">
-                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.5821 2.68817H9.9647C9.53533 1.41293 8.32913 0.491577 6.91095 0.491577C5.49276 0.491577 4.28656 1.41293 3.8572 2.68817H1.41943C0.853144 2.68817 0.394043 3.14727 0.394043 3.71356C0.394043 4.27985 0.853144 4.73895 1.41943 4.73895H3.85727C4.28663 6.01419 5.49283 6.93554 6.91102 6.93554C8.3292 6.93554 9.5354 6.01419 9.96477 4.73895H25.5822C26.1485 4.73895 26.6076 4.27985 26.6076 3.71356C26.6076 3.14727 26.1485 2.68817 25.5821 2.68817ZM6.91095 4.88476C6.26516 4.88476 5.73975 4.35935 5.73975 3.71356C5.73975 3.06777 6.26516 2.54236 6.91095 2.54236C7.55674 2.54236 8.08215 3.06777 8.08215 3.71356C8.08215 4.35935 7.55674 4.88476 6.91095 4.88476Z" fill="#909090"/>
-            <path d="M25.5821 11.4747H23.1443C22.715 10.1994 21.5087 9.27808 20.0906 9.27808C18.6725 9.27808 17.4662 10.1994 17.0369 11.4747H1.41943C0.853144 11.4747 0.394043 11.9338 0.394043 12.5001C0.394043 13.0663 0.853144 13.5254 1.41943 13.5254H17.0369C17.4662 14.8007 18.6725 15.722 20.0906 15.722C21.5087 15.722 22.715 14.8007 23.1444 13.5254H25.5822C26.1485 13.5254 26.6076 13.0663 26.6076 12.5001C26.6076 11.9338 26.1485 11.4747 25.5821 11.4747ZM20.0906 13.6713C19.4448 13.6713 18.9194 13.1458 18.9194 12.5001C18.9194 11.8543 19.4448 11.3289 20.0906 11.3289C20.7364 11.3289 21.2618 11.8543 21.2618 12.5001C21.2618 13.1458 20.7364 13.6713 20.0906 13.6713Z" fill="#909090"/>
-            <path d="M25.5821 20.261H14.3579C13.9286 18.9858 12.7224 18.0645 11.3042 18.0645C9.88602 18.0645 8.67982 18.9858 8.25045 20.261H1.41943C0.853144 20.261 0.394043 20.7201 0.394043 21.2864C0.394043 21.8527 0.853144 22.3118 1.41943 22.3118H8.25045C8.67982 23.5871 9.88602 24.5084 11.3042 24.5084C12.7224 24.5084 13.9286 23.5871 14.3579 22.3118H25.5822C26.1485 22.3118 26.6076 21.8527 26.6076 21.2864C26.6076 20.7201 26.1485 20.261 25.5821 20.261ZM11.3042 22.4577C10.6584 22.4577 10.133 21.9323 10.133 21.2865C10.133 20.6407 10.6584 20.1153 11.3042 20.1153C11.95 20.1153 12.4754 20.6406 12.4754 21.2864C12.4754 21.9322 11.95 22.4577 11.3042 22.4577Z" fill="#909090"/>
-                </svg>
-            </button>
+                <button class="btn btn-link btn-filter p-0 ms-5"></button>
             </nav>
 
 
@@ -140,7 +134,7 @@
                 <div class=" px-5 pt-4">
                     <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="characteristics-tab" data-bs-toggle="tab" data-bs-target="#characteristics" type="button" role="tab" aria-controls="characteristics" aria-selected="true">Характеристики</button>
+                            <button class="nav-link active" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Общие</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="options-tab" data-bs-toggle="tab" data-bs-target="#options" type="button" role="tab" aria-controls="options" aria-selected="false">Параметры</button>
@@ -150,72 +144,153 @@
                         </li>
                     </ul>
                     <div class="tab-content pt-5" id="myTabContent">
-                        <div class="tab-pane fade show active d-flx" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
+                        <div class="tab-pane fade show active d-flx" id="main" role="tabpanel" aria-labelledby="main-tab">
                             <div class="d-flex">
                                 <div class="col-5 pe-5">
                                     <div class="mb-3">
                                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
                                     </div>
                                     <select class="form-select mb-3">
-                                            <option value="1" selected>Категория</option>
-                                            <option value="2">Категория 2</option>
-                                            <option value="3">Категория 3</option>
-                                        </select>
+                                        <option value="1" selected>Категория</option>
+                                        <option value="2">Категория 2</option>
+                                        <option value="3">Категория 3</option>
+                                    </select>
                                     <select class="form-select mb-3">
-                                            <option value="1" selected>Акции</option>
-                                            <option value="2">Категория 2</option>
-                                            <option value="3">Категория 3</option>
-                                        </select>
+                                        <option value="1" selected>Акции</option>
+                                        <option value="2">Категория 2</option>
+                                        <option value="3">Категория 3</option>
+                                    </select>
                                     <div class="d-flex align-items-center mb-3">
-                                        <label for="" class="form-label w-50 mb-0">Порядковый номер</label>
-                                        <select class="form-select w-50">
-                                            <option value="1" selected>1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                        <label for="price-input" class="form-label w-50 mb-0">Цена</label>
+                                        <input id="price-input" type="text" class="form-control text-end w-50" value="150">
                                     </div>
-                                    <div class="form-check form-switch mb-3 ps-0">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Статус</label>
-                                        <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <label for="amount-input" class="form-label w-50 mb-0">Кол-во</label>
+                                        <input id="amount-input" type="text" class="form-control text-end w-50" value="5">
                                     </div>
-
-                                    <div class="d-flex align-items-center justify-content-between">
+                                    <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
+                                        <label class="form-check-label" for="status-switch">Статус</label>
+                                        <div class="d-flex align-items-center fs-6 flex-row-reverse">
+                                            <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
+                                            <span class="text-muted me-4 status-state"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
                                         <span>Дата изменения</span>
                                         <span class="text-muted">24.02.21</span>
                                     </div>
+                                    <textarea class="form-control p-3" placeholder="Описание товара" name="" id="" rows="6"></textarea>
                                 </div>
 
 
-                                <div class="col-5">
-                                    <div class="h2">Фото</div>
-                                    <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Основное</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="plug-tab" data-bs-toggle="tab" data-bs-target="#plug" type="button" role="tab" aria-controls="plug" aria-selected="false">Заглушки</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content pt-5" id="myTabContent">
-                                        <div class="tab-pane fade show active d-fle" id="main" role="tabpanel" aria-labelledby="main-tab">
-                                            <div class="mb-3">
-                                                <span class="text-muted me-4">нажмите</span>
-                                                <button class="btn btn-primary">Загрузить</button>
-                                            </div>
-                                            <div class="border-dashed col-6 text-center text-muted d-flex flex-column align-items-center py-5">
-                                                <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M54.1567 17.8931C51.1526 5.92548 39.0158 -1.34077 27.0482 1.66337C17.6959 4.01111 10.905 12.0942 10.2053 21.7113C3.56472 22.8064 -0.930829 29.0773 0.164276 35.7179C1.13777 41.6214 6.25317 45.9449 12.2363 45.9211H22.3915V41.8591H12.2363C7.74953 41.8591 4.11221 38.2217 4.11221 33.735C4.11221 29.2482 7.74953 25.6108 12.2363 25.6108C13.3581 25.6108 14.2674 24.7016 14.2674 23.5798C14.2572 13.4845 22.433 5.29231 32.5283 5.28228C41.2673 5.27352 48.7901 11.4517 50.4806 20.0255C50.6475 20.8816 51.3422 21.5356 52.2069 21.6503C57.7595 22.441 61.6196 27.5832 60.829 33.1357C60.1191 38.1216 55.862 41.8339 50.8258 41.8591H42.7017V45.9211H50.8258C58.6778 45.8974 65.0237 39.5128 64.9999 31.6609C64.9801 25.1248 60.5062 19.4441 54.1567 17.8931Z" fill="#392DFF"/>
-                                                            <path d="M31.1048 26.2L22.9807 34.3241L25.8445 37.1878L30.5158 32.5368V52.0143H34.5779V32.5368L39.2289 37.1878L42.0927 34.3241L33.9686 26.2C33.1763 25.4124 31.897 25.4124 31.1048 26.2Z" fill="#392DFF"/>
-                                                        </svg>
-                                                <span class="mt-4 mb-5">или <span class="fw-bold">перетащите фотографию</span></span>
+                                <div class="col-5 position-relative">
+                                    <div class="h2 position-absolute" style="top: -55px;">Фото</div>
+
+                                    <div class="mb-4 gx-4 row row-cols-2">
+                                        <div>
+                                            <div class="w-100 border-dashed col-6 text-center text-muted d-flex flex-column align-items-center py-5">
+                                                <svg class="mb-2" width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M54.1567 17.8931C51.1526 5.92548 39.0158 -1.34077 27.0482 1.66337C17.6959 4.01111 10.905 12.0942 10.2053 21.7113C3.56472 22.8064 -0.930829 29.0773 0.164276 35.7179C1.13777 41.6214 6.25317 45.9449 12.2363 45.9211H22.3915V41.8591H12.2363C7.74953 41.8591 4.11221 38.2217 4.11221 33.735C4.11221 29.2482 7.74953 25.6108 12.2363 25.6108C13.3581 25.6108 14.2674 24.7016 14.2674 23.5798C14.2572 13.4845 22.433 5.29231 32.5283 5.28228C41.2673 5.27352 48.7901 11.4517 50.4806 20.0255C50.6475 20.8816 51.3422 21.5356 52.2069 21.6503C57.7595 22.441 61.6196 27.5832 60.829 33.1357C60.1191 38.1216 55.862 41.8339 50.8258 41.8591H42.7017V45.9211H50.8258C58.6778 45.8974 65.0237 39.5128 64.9999 31.6609C64.9801 25.1248 60.5062 19.4441 54.1567 17.8931Z" fill="#392DFF"/>
+                                                    <path d="M31.1048 26.2L22.9807 34.3241L25.8445 37.1878L30.5158 32.5368V52.0143H34.5779V32.5368L39.2289 37.1878L42.0927 34.3241L33.9686 26.2C33.1763 25.4124 31.897 25.4124 31.1048 26.2Z" fill="#392DFF"/>
+                                                </svg>
                                                 <span>800 х 600</span>
                                             </div>
-
                                         </div>
-
-                                        <div class="tab-pane fade" id="plug" role="tabpanel" aria-labelledby="plug-tab">...</div>
-
+                                        <div class="position-relative">
+                                            <input type="file" class="col-6 top-0 start-0 w-100 h-100 position-absolute">
+                                            <div class="h-100 d-flex" style="background-color: #E5E5E5;">
+                                                <svg class="m-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="18" width="4" height="40" rx="2" fill="#909090"/>
+                                                    <rect x="40" y="18" width="4" height="40" rx="2" transform="rotate(90 40 18)" fill="#909090"/>
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="row row-cols-4 g-3">
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/57e1d6434c51ac14f1dc8460962e33791c3ad6e04e507440762879dd974dc1_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">Неприлично длинное название изображения очень</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/55e8d5464353ad14f1dc8460962e33791c3ad6e04e50744172297cdc904ac3_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">IMG_2046</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/57e1d6434c51ac14f1dc8460962e33791c3ad6e04e507440762879dd974dc1_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">Неприлично длинное название изображения очень</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/55e8d5464353ad14f1dc8460962e33791c3ad6e04e50744172297cdc904ac3_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">IMG_2046</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/57e1d6434c51ac14f1dc8460962e33791c3ad6e04e507440762879dd974dc1_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">Неприлично длинное название изображения очень</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/55e8d5464353ad14f1dc8460962e33791c3ad6e04e50744172297cdc904ac3_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">IMG_2046</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/57e1d6434c51ac14f1dc8460962e33791c3ad6e04e507440762879dd974dc1_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium text-nowrap text-truncate">Неприлично длинное название изображения очень</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                                <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                                <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/55e8d5464353ad14f1dc8460962e33791c3ad6e04e50744172297cdc904ac3_640.jpg" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="fw-medium">IMG_2046</div>
+                                                <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

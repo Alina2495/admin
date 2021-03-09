@@ -4499,16 +4499,35 @@ fieldset:disabled .btn {
   cursor: default;
 }
 
+.nav-tabs .nav-item {
+  margin-right: 20px;
+}
+
+.nav-tabs .nav-item:hover {
+  width: auto;
+  min-width: auto;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .nav-tabs .nav-link {
   margin-bottom: -1px;
   background: none;
   border: 1px solid transparent;
   font-size: 1.375rem;
+  padding: 0;
+  padding-bottom: 12px;
 }
 
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
   isolation: isolate;
+  width: auto;
+  padding: 0;
+  padding-bottom: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -4520,6 +4539,7 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   background-color: #fff;
+  border: none;
   border-bottom: 1px solid #392DFF;
 }
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=1920">
-    <title>Admin</title>
+    <title>Товары Admin</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,14 +65,11 @@
             <a href="index.html" class="my-4 d-block text-center">
                 <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
             </a>
-
-
             <div class="nav-item mx-auto">
                 <div class="nav-link text-center px-0">
                     <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
                 </div>
             </div>
-
             <div class="">
                 <div class="nav-item">
                     <a class="nav-link" href="index.html">
@@ -87,7 +84,7 @@
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link active" href="folders.html">
+                    <a class="nav-link active" href="items.html">
                         <img class="nav-icon" src="img/icons/icon3.svg">
                         <span>Товары</span>
                     </a>
@@ -147,29 +144,23 @@
                     </a>
                 </div>
             </div>
-
         </nav>
-
         <div>
             <!-- верхний блок -->
             <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block ps- d-flex align-items-center" style="height: 4rem; padding-left: 130px;">
+                <input type="text" class="form-control me-5" placeholder="от" style="width: 8.125rem;">
+                <input type="text" class="form-control me-5" placeholder="до" style="width: 8.125rem;">
                 <div class="d-inline-block" style="width: 19rem;">
                     <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
                     <datalist id="datalistOptions">
-                    <option value="San Francisco">
-                    <option value="New York">
-                    <option value="Seattle">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                </datalist>
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
                 </div>
-                <button class="btn btn-link p-0 ms-5">
-                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.5821 2.68817H9.9647C9.53533 1.41293 8.32913 0.491577 6.91095 0.491577C5.49276 0.491577 4.28656 1.41293 3.8572 2.68817H1.41943C0.853144 2.68817 0.394043 3.14727 0.394043 3.71356C0.394043 4.27985 0.853144 4.73895 1.41943 4.73895H3.85727C4.28663 6.01419 5.49283 6.93554 6.91102 6.93554C8.3292 6.93554 9.5354 6.01419 9.96477 4.73895H25.5822C26.1485 4.73895 26.6076 4.27985 26.6076 3.71356C26.6076 3.14727 26.1485 2.68817 25.5821 2.68817ZM6.91095 4.88476C6.26516 4.88476 5.73975 4.35935 5.73975 3.71356C5.73975 3.06777 6.26516 2.54236 6.91095 2.54236C7.55674 2.54236 8.08215 3.06777 8.08215 3.71356C8.08215 4.35935 7.55674 4.88476 6.91095 4.88476Z" fill="#909090"/>
-            <path d="M25.5821 11.4747H23.1443C22.715 10.1994 21.5087 9.27808 20.0906 9.27808C18.6725 9.27808 17.4662 10.1994 17.0369 11.4747H1.41943C0.853144 11.4747 0.394043 11.9338 0.394043 12.5001C0.394043 13.0663 0.853144 13.5254 1.41943 13.5254H17.0369C17.4662 14.8007 18.6725 15.722 20.0906 15.722C21.5087 15.722 22.715 14.8007 23.1444 13.5254H25.5822C26.1485 13.5254 26.6076 13.0663 26.6076 12.5001C26.6076 11.9338 26.1485 11.4747 25.5821 11.4747ZM20.0906 13.6713C19.4448 13.6713 18.9194 13.1458 18.9194 12.5001C18.9194 11.8543 19.4448 11.3289 20.0906 11.3289C20.7364 11.3289 21.2618 11.8543 21.2618 12.5001C21.2618 13.1458 20.7364 13.6713 20.0906 13.6713Z" fill="#909090"/>
-            <path d="M25.5821 20.261H14.3579C13.9286 18.9858 12.7224 18.0645 11.3042 18.0645C9.88602 18.0645 8.67982 18.9858 8.25045 20.261H1.41943C0.853144 20.261 0.394043 20.7201 0.394043 21.2864C0.394043 21.8527 0.853144 22.3118 1.41943 22.3118H8.25045C8.67982 23.5871 9.88602 24.5084 11.3042 24.5084C12.7224 24.5084 13.9286 23.5871 14.3579 22.3118H25.5822C26.1485 22.3118 26.6076 21.8527 26.6076 21.2864C26.6076 20.7201 26.1485 20.261 25.5821 20.261ZM11.3042 22.4577C10.6584 22.4577 10.133 21.9323 10.133 21.2865C10.133 20.6407 10.6584 20.1153 11.3042 20.1153C11.95 20.1153 12.4754 20.6406 12.4754 21.2864C12.4754 21.9322 11.95 22.4577 11.3042 22.4577Z" fill="#909090"/>
-                </svg>
-            </button>
+                <button class="btn btn-link btn-filter p-0 ms-5"></button>
             </nav>
 
             <!-- главное -->
@@ -200,10 +191,24 @@
                             </div>
 
                             <div class="m-4 mt-0 overflow-auto" style="height: 46rem;">
-
-                                <div class="d-flex align-items-center text-nowrap text-truncate">
+                                <div class="d-flex align-items-center text-nowrap">
                                     <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3">
+                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                        <div class="col-4 text-truncate">Термостакан "Любовь согревает", 350 мл</div>
+                                        <div class="col-2 text-truncate">Для влюбленных</div>
+                                        <div class="col-1">1550694</div>
+                                        <div class="col-1 text-center">250</div>
+                                        <div class="col-1 text-center">1</div>
+                                        <div class="col-2">Скрыт</div>
+                                        <div class="ms-auto col-1 d-flex justify-content-end">
+                                            <button class="btn btn-link btn-edit p-1"></button>
+                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center text-nowrap">
+                                    <input class="form-check-input me-3" type="checkbox">
+                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
                                         <div class="col-4 text-truncate">Термостакан "Любовь согревает", 350 мл</div>
                                         <div class="col-2 text-truncate">Для влюбленных</div>
                                         <div class="col-1">1550694</div>
@@ -260,7 +265,7 @@
                                 <button class="btn btn-outline-primary me-auto px-5">Сохранить</button>
                                 <button class="btn btn-outline-primary">Посмотреть</button>
                             </div>
-                            <button class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</button>
+                            <a href="item-edit.html" class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</a>
                         </div>
                     </aside>
                 </div>
