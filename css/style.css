@@ -245,4 +245,16 @@ input[type=file] {
 .modal-body .form-control {
   width: 470px;
 }
+
+.nav-link-3 {
+  width: 100%;
+  text-align: left !important;
+  background-color: white;
+  font-size: inherit;
+}
+
+.nav-link-3.active {
+  background-color: rgba(59, 47, 255, 0.1);
+  border: none !important;
+}
 /*# sourceMappingURL=style.css.map */

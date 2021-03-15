@@ -245,7 +245,7 @@
                                 <button type="button" class="btn btn-primary">Общие</button>
                                 <button type="button" class="btn btn-gray pe-5" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
                             </div>
-                            <div class="row row-cols-2 pt-3">
+                            <div class="row row-cols-2 pt-3 pb-2 border-bottom">
                                 <div>
                                     <span class="text-muted fs-4.4 me-3">Название параметра</span>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
@@ -258,23 +258,29 @@
                                     <button class="btn btn-link p-1 btn-search"></button>
                                 </div>
                             </div>
-                            <div class="d-flex">
-
-                                <ul class="nav nav-tabs fw-medium col-6" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="option-1-tab" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
+                            <div class="row row-cols-2 gx-0 fs-4.4">
+                                <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
+                                    <li class="nav-item-3" role="presentation">
+                                        <button class="nav-link-3 active p-3 border" id="option-1-tab" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
                                     </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="option-2-tab" data-bs-toggle="tab" data-bs-target="#option-2" type="button" role="tab" aria-controls="option-2" aria-selected="false">Память</button>
+                                    <li class="nav-item-3" role="presentation">
+                                        <button class="nav-link-3 p-3 border" id="option-2-tab" data-bs-toggle="tab" data-bs-target="#option-2" type="button" role="tab" aria-controls="option-2" aria-selected="false">Память</button>
                                     </li>
                                 </ul>
-
-                                <div class="tab-content pt-5 col-6" id="myTabContent">
+                                <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="option-1" role="tabpanel" aria-labelledby="option-1">
-                                        27 дюймов
+                                        <div class="border p-3">27 дюймов</div>
+                                        <div class="border p-3">54 дюймов</div>
+                                        <div class="border p-3">27 дюймов</div>
+                                        <div class="border p-3">54 дюймов</div>
+                                        <div class="border p-3">27 дюймов</div>
+                                        <div class="border p-3">54 дюймов</div>
                                     </div>
                                     <div class="tab-pane fade" id="option-2" role="tabpanel" aria-labelledby="option-2">
-                                        32гБ
+                                        <div class="border p-3">16гБ</div>
+                                        <div class="border p-3">16гБ</div>
+                                        <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum assumenda!
+                                            Deleniti optio minus eius?</div>
                                     </div>
                                 </div>
 
@@ -283,10 +289,11 @@
                         <!-- Options Tab End -->
                         <!-- SEO Tab -->
                         <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-tab">
-                            <div class="col-6 overflow-auto px-3" style="height: 40rem;">
-                                <!-- Title -->
-                                <div class="mb-5">
-                                    <label for="titleTextarea" class="form-label position-relative">
+                            <div class="overflow-auto px-3" style="height: 40rem;">
+                                <div class="col-6">
+                                    <!-- Title -->
+                                    <div class="mb-5">
+                                        <label for="titleTextarea" class="form-label position-relative">
                                         <span class="fs-4">Title</span>
                                         <svg class="position-absolute" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="6" cy="6" r="6" fill="#3B2FFF"/>
@@ -298,50 +305,51 @@
                                             </div>
                                         </div>
                                     </label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <label for="titleSwitch">Шаблон</label>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0" type="checkbox" id="titleSwitch">
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="titleSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="titleSwitch">
+                                            </div>
+                                            <label for="titleSwitch">Вручную</label>
                                         </div>
-                                        <label for="titleSwitch">Вручную</label>
+                                        <textarea class="form-control" id="titleTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="titleTextarea" rows="3"></textarea>
-                                </div>
-                                <!-- Description -->
-                                <div class="mb-5">
-                                    <label for="descTextarea" class="form-label fs-4">Description</label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <label for="descSwitch">Шаблон</label>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0" type="checkbox" id="descSwitch">
+                                    <!-- Description -->
+                                    <div class="mb-5">
+                                        <label for="descTextarea" class="form-label fs-4">Description</label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="descSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="descSwitch">
+                                            </div>
+                                            <label for="descSwitch">Вручную</label>
                                         </div>
-                                        <label for="descSwitch">Вручную</label>
+                                        <textarea class="form-control" id="descTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="descTextarea" rows="3"></textarea>
-                                </div>
-                                <!-- Keywords -->
-                                <div class="mb-5">
-                                    <label for="keywordsTextarea" class="form-label fs-4">Keywords</label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <label for="keywordsSwitch">Шаблон</label>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0" type="checkbox" id="keywordsSwitch">
+                                    <!-- Keywords -->
+                                    <div class="mb-5">
+                                        <label for="keywordsTextarea" class="form-label fs-4">Keywords</label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="keywordsSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="keywordsSwitch">
+                                            </div>
+                                            <label for="keywordsSwitch">Вручную</label>
                                         </div>
-                                        <label for="keywordsSwitch">Вручную</label>
+                                        <textarea class="form-control" id="keywordsTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="keywordsTextarea" rows="3"></textarea>
-                                </div>
-                                <!-- URL -->
-                                <div class="mb-5">
-                                    <label for="urlTextarea" class="form-label fs-4">URL</label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <label for="urlSwitch">Шаблон</label>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0" type="checkbox" id="urlSwitch">
+                                    <!-- URL -->
+                                    <div class="mb-5">
+                                        <label for="urlTextarea" class="form-label fs-4">URL</label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="urlSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="urlSwitch">
+                                            </div>
+                                            <label for="urlSwitch">Вручную</label>
                                         </div>
-                                        <label for="urlSwitch">Вручную</label>
+                                        <textarea class="form-control" id="urlTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="urlTextarea" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
