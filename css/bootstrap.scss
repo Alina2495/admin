@@ -2380,6 +2380,7 @@ textarea.form-control-lg {
     background-position: left center;
     border-radius: 1em;
     transition: background-position 0.15s ease-in-out;
+    float: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5821,7 +5822,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: 900px;
         margin: 1.75rem auto;
     }
     .modal-dialog-scrollable {

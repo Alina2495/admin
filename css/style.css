@@ -91,6 +91,10 @@ body {
   background-image: url("../img/icons/btn-hide.svg");
 }
 
+.btn-delete-3 {
+  background-image: url("../img/icons/btn-hide.svg");
+}
+
 .btn-edit {
   background-image: url("../img/icons/btn-edit.svg");
 }
@@ -105,12 +109,31 @@ body {
   height: 0.75rem;
 }
 
+.box-2 .btn-delete {
+  background-size: 160%;
+}
+
 .btn-img {
   background-image: url("../img/icons/btn-img.svg");
 }
 
 .btn-img-close {
   background-image: url("../img/icons/btn-img-close.svg");
+}
+
+.btn-search {
+  background-image: url("../img/icons/btn-search.svg");
+  background-size: auto;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.btn-gray {
+  background: #F0F2F5 url("../img/icons/btn-show.svg") no-repeat;
+  background-position: 92% 50%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 5px 0px 0px;
 }
 
 .border-dashed {
@@ -213,5 +236,13 @@ img {
 input[type=file] {
   opacity: 0;
   cursor: pointer;
+}
+
+.row1 .form-check-input {
+  left: 0;
+}
+
+.modal-body .form-control {
+  width: 470px;
 }
 /*# sourceMappingURL=style.css.map */

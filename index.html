@@ -65,14 +65,11 @@
             <a href="index.html" class="my-4 d-block text-center">
                 <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
             </a>
-
-
             <div class="nav-item mx-auto">
                 <div class="nav-link active text-center px-0">
                     <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
                 </div>
             </div>
-
             <div class="">
                 <div class="nav-item">
                     <a class="nav-link" href="index.html">
@@ -152,7 +149,7 @@
 
         <div>
             <!-- верхний блок -->
-            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block ps- d-flex align-items-center" style="height: 4rem; padding-left: 130px;">
+            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block d-flex align-items-center" style="height: 4rem; padding-left: 130px;">
                 <div class="d-inline-block" style="width: 19rem;">
                     <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
                     <datalist id="datalistOptions">
@@ -177,330 +174,82 @@
                                     <li class="breadcrumb-item active fw-normal" aria-current="page">Список</li>
                                 </ol>
                             </nav>
-
+                            <button class="btn btn-primary ms-5">Добавить категорию</button>
                             <select class="form-select border-0 fs-5 w-auto">
                                 <option value="1" selected>Показывать по 20</option>
                                 <option value="2">Показывать по 30</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="px-4">
 
                             <div class="d-flex fs-5 p-4">
-                                <div class="col-7 ms-4">Название</div>
-                                <div class="col-1">Кол-во</div>
-                                <div class="col-2 ms-4">Статус</div>
+                                <div class="col-6 ms-4">Название</div>
+                                <div class="col-2 text-center">Кол-во</div>
+                                <div class="col-2">Статус</div>
                             </div>
 
-                            <div class="rounded border m-4 mt-0 overflow-auto" style="height: 46rem;">
+                            <div class="mt-0 overflow-auto" style="height: 46rem;">
+
+
+                                <div class="">
+                                    <input class="form-check-input me-3 my-auto position-absolute" type="checkbox">
+                                    <div class="d-flex border p-3 box-2 flex-grow-1">
+                                        <div class="col-1" style="width: 3rem;">
+                                            <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
+                                        </div>
+                                        <div class="col-6">Для влюбленных</div>
+                                        <div class="col-2 text-center">1</div>
+                                        <div class="col-2">Отображается</div>
+                                        <div class="ms-auto col-1 d-flex justify-content-end">
+                                            <button class="btn btn-link btn-edit p-1"></button>
+                                            <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="catalog1">
+                                        <input class="form-check-input me-3 position-absolute" type="checkbox">
+                                        <div class="d-flex border-bottom p-3 box-2">
+                                            <div class="col-1" style="width: 3rem;"></div>
+                                            <div class="col-7">Вкусные подарки Любовь</div>
+                                            <div class="col-1 text-center">1</div>
+                                            <div class="col-2">Отображается</div>
+                                            <div class="ms-auto col-1 d-flex justify-content-end">
+                                                <button class="btn btn-link btn-edit p-1"></button>
+                                                <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="catalog1">
+                                        <input class="form-check-input me-3 position-absolute" type="checkbox">
+                                        <div class="d-flex border-bottom p-3 box-2">
+                                            <div class="col-1" style="width: 3rem;">
+                                                <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
+                                            </div>
+                                            <div class="col-7">Другое</div>
+                                            <div class="col-1 text-center">1</div>
+                                            <div class="col-2">Отображается</div>
+                                            <div class="ms-auto col-1 d-flex justify-content-end">
+                                                <button class="btn btn-link btn-edit p-1"></button>
+                                                <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
+                                    <input class="form-check-input me-3 position-absolute" type="checkbox">
+                                    <div class="d-flex border-bottom p-3 box-2">
+
+                                        <div class="col-1" style="width: 3rem;"></div>
+                                        <div class="col-7">Товары 18+</div>
                                         <div class="col-1 text-center">1</div>
                                         <div class="col-2">Отображается</div>
                                         <div class="ms-auto col-1 d-flex justify-content-end">
                                             <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
+                                            <button class="btn btn-link btn-delete p-1 ms-3"></button>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        <div class="col-7">Для влюбленных</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Для влюбленных</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex border-bottom p-3">
-                                        <button class="btn btn-link btn-show p-1 me-4 col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-                                        <div class="col-7">Подарочные наборы</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-4"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="d-flex border-bottom p-3">
-                                            <button class="btn btn-link btn-show p-1"></button>
-                                            <div>Подарочные наборы</div>
-                                            <div>1</div>
-                                            <div>Отображается</div>
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1"></button>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </article>
