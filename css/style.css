@@ -145,6 +145,7 @@ body {
 }
 
 .form-check-input:checked + .box,
+.form-check-input:checked + .folder,
 .modal-content {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -200,10 +201,12 @@ img {
 
 .overflow-auto::-webkit-scrollbar-button:vertical:start:decrement {
   background-color: transparent;
+  height: 0;
 }
 
 .overflow-auto::-webkit-scrollbar-button:vertical:end:increment {
   background-color: transparent;
+  height: 0;
 }
 
 .overflow-auto-hidden {
@@ -229,7 +232,7 @@ img {
 }
 
 #status-switch:checked + .status-state:before {
-  color: #3B2FFF;
+  color: #392DFF;
   content: 'Активен';
 }
 
@@ -254,7 +257,27 @@ input[type=file] {
 }
 
 .nav-link-3.active {
-  background-color: rgba(59, 47, 255, 0.1);
+  background-color: rgba(57, 45, 255, 0.1);
   border: none !important;
+}
+
+.btn-3 {
+  background-color: white;
+  color: #392DFF;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #392DFF;
+}
+
+.btn-3.active {
+  background-color: #392DFF;
+  color: white;
+}
+
+.btn-3.active:hover {
+  color: white;
+}
+
+.btn-3:hover {
+  color: #392DFF;
 }
 /*# sourceMappingURL=style.css.map */

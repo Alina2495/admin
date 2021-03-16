@@ -120,7 +120,7 @@
 
 
             <article class="bg-white mt-4" style="width: 106rem; height: 55rem; margin-left: 130px;">
-                <div class="py-2 px-4 border-bottom">
+                <div class="py-3 px-4 border-bottom">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb fw-bold mb-0">
                             <li class="breadcrumb-item"><a href="#">Каталог</a></li>
@@ -207,7 +207,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="row row-cols-4 g-3">
+                                    <div class="row row-cols-4 g-3 overflow-auto align-content-start" style="height: 30rem;">
                                         <div>
                                             <div class="border mb-2 position-relative" style="height: 9.375rem;">
                                                 <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
@@ -295,129 +295,240 @@
                             </div>
                         </div>
 
+                        <!-- Options Tab -->
                         <div class="tab-pane fade" id="options" role="tabpanel" aria-labelledby="options-tab">
 
 
 
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
+                            <ul class="nav fw-medium border-bottom" id="myTab" role="tablist">
+                                <li role="presentation">
+                                    <button class="btn btn-3 active" id="common-group" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="common" aria-selected="true">Общие</button>
+                                </li>
+                                <li role="presentation">
+                                    <button class="btn btn-3" id="second-group" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Вторая группа</button>
+                                </li>
+                                <button type="button" class="btn btn-gray pe-5 order-1" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
+                            </ul>
 
-                            <div>
-                                <span class="text-muted fs-4 me-3">Название параметра</span>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
-                            </div>
-                            <div>
-                                <span class="text-muted fs-4 me-3">Значение параметра</span>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
-                            </div>
-
-
-                            <div class="d-flex">
-                                <ul class="nav nav-tabs fw-medium col-6" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="option-1" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
-                                    </li>
-
-
-                                </ul>
-
-                                <div class="tab-content pt-5 col-6" id="myTabContent">
-                                    <div class="tab-pane fade show active d-flx" id="option-1" role="tabpanel" aria-labelledby="option-1-tab">
-                                        27 дюймов
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="common" role="tabpanel">
+                                    <div class="row row-cols-2 pt-3 pb-2 border-bottom">
+                                        <div>
+                                            <span class="text-muted fs-4.4 me-3">Название параметра</span>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="text-muted fs-4.4 me-3">Значение параметра</span>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
+                                            </div>
+                                            <button class="btn btn-link p-1 btn-search"></button>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-2 gx-0 fs-4.4">
+                                        <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
+                                            <li class="nav-item-3" role="presentation">
+                                                <button class="nav-link-3 active p-3 border" id="option-1-tab" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
+                                            </li>
+                                            <li class="nav-item-3" role="presentation">
+                                                <button class="nav-link-3 p-3 border" id="option-2-tab" data-bs-toggle="tab" data-bs-target="#option-2" type="button" role="tab" aria-controls="option-2" aria-selected="false">Память</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="option-1" role="tabpanel" aria-labelledby="option-1">
+                                                <div class="border p-3">27 дюймов</div>
+                                                <div class="border p-3">54 дюймов</div>
+                                                <div class="border p-3">27 дюймов</div>
+                                                <div class="border p-3">54 дюймов</div>
+                                                <div class="border p-3">27 дюймов</div>
+                                                <div class="border p-3">54 дюймов</div>
+                                            </div>
+                                            <div class="tab-pane fade" id="option-2" role="tabpanel" aria-labelledby="option-2">
+                                                <div class="border p-3">16гБ</div>
+                                                <div class="border p-3">16гБ</div>
+                                                <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum
+                                                    assumenda! Deleniti optio minus eius?</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="second" role="tabpanel">
+                                    <div class="row row-cols-2 pt-3 pb-2 border-bottom">
+                                        <div>
+                                            <span class="text-muted fs-4.4 me-3">Название параметра</span>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="text-muted fs-4.4 me-3">Значение параметра</span>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
+                                            </div>
+                                            <button class="btn btn-link p-1 btn-search"></button>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-2 gx-0 fs-4.4">
+                                        <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
+                                            <li class="nav-item-3" role="presentation">
+                                                <button class="nav-link-3 active p-3 border" id="option-3-tab" data-bs-toggle="tab" data-bs-target="#option-3" type="button" role="tab" aria-controls="option-3" aria-selected="true">Цвет</button>
+                                            </li>
+                                            <li class="nav-item-3" role="presentation">
+                                                <button class="nav-link-3 p-3 border" id="option-4-tab" data-bs-toggle="tab" data-bs-target="#option-4" type="button" role="tab" aria-controls="option-4" aria-selected="false">Размер</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="option-3" role="tabpanel" aria-labelledby="option-3">
+                                                <div class="border p-3">зеленый</div>
+                                                <div class="border p-3">54 дюймов</div>
+                                                <div class="border p-3">27 дюймов</div>
+                                            </div>
+                                            <div class="tab-pane fade" id="option-4" role="tabpanel" aria-labelledby="option-4">
+                                                <div class="border p-3">16гБ</div>
+                                                <div class="border p-3">16гБ</div>
+                                                <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum
+                                                    assumenda! Deleniti optio minus eius?</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
+                        <!-- Options Tab End -->
 
+                        <!-- SEO Tab -->
                         <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-tab">
-
-                            <div class="col-6 overflow-auto px-3" style="height: 40rem;">
-
-                                <div class="mb-5">
-                                    <label for="exampleFormControlTextarea1" class="form-label position-relative">
-                                                <span class="fs-4">Title</span>
-                                                <svg class="position-absolute" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="overflow-auto px-3" style="height: 40rem;">
+                                <div class="col-6">
+                                    <!-- Title -->
+                                    <div class="mb-5">
+                                        <label for="titleTextarea" class="form-label position-relative">
+                                        <span class="fs-4">Title</span>
+                                        <svg class="position-absolute" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="6" cy="6" r="6" fill="#3B2FFF"/>
                                                     <path d="M6.02238 2.3C6.46905 2.3 6.86572 2.37 7.21238 2.51C7.55905 2.64333 7.83238 2.84 8.03238 3.1C8.23238 3.36 8.33238 3.67333 8.33238 4.04C8.33238 4.44 8.24572 4.77 8.07238 5.03C7.90572 5.29 7.67905 5.49 7.39238 5.63C7.10572 5.77 6.78905 5.85667 6.44238 5.89L6.41238 6.9H5.38238V5.39C6.03572 5.31 6.49905 5.17667 6.77238 4.99C7.05238 4.79667 7.19238 4.52667 7.19238 4.18C7.19238 3.89333 7.08905 3.66667 6.88238 3.5C6.68238 3.32667 6.37238 3.24 5.95238 3.24C5.55905 3.24 5.23905 3.35 4.99238 3.57C4.74572 3.79 4.59905 4.09667 4.55238 4.49L3.56238 4.04C3.67572 3.52667 3.93905 3.11 4.35238 2.79C4.77238 2.46333 5.32905 2.3 6.02238 2.3ZM5.90238 7.67C6.12905 7.67 6.30905 7.73667 6.44238 7.87C6.57572 7.99667 6.64238 8.16667 6.64238 8.38C6.64238 8.6 6.57572 8.77333 6.44238 8.9C6.30905 9.02667 6.12905 9.09 5.90238 9.09C5.66905 9.09 5.48572 9.02667 5.35238 8.9C5.21905 8.77333 5.15238 8.6 5.15238 8.38C5.15238 8.16667 5.21905 7.99667 5.35238 7.87C5.48572 7.73667 5.66905 7.67 5.90238 7.67Z" fill="white"/>
-                                                </svg>
-                                                <div class="bg-white shadow small position-absolute hint">
-                                                    <div class="small text-muted p-3" style="width: 14rem;">
-                                                        <div class="small">
-                                                        Остались вопросы? Выберите свой вопрос, 
-                                                    выберите свой вопрос, выберите свой вопрос,
-                                                    выберите свой вопрос, выберите свой вопрос</div>
-                                                    </div>
-                                                </div>
-                                            </label>
-
-                                    <div class="d-flex mb-2 text-muted">
-                                        <span>Шаблон</span>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                        </svg>
+                                        <div class="bg-white shadow small position-absolute hint">
+                                            <div class="small text-muted p-3" style="width: 14rem;">
+                                                <div class="small">Остались вопросы? Выберите свой вопрос, выберите свой вопрос, выберите свой вопрос, выберите свой вопрос, выберите свой вопрос</div>
+                                            </div>
                                         </div>
-                                        <span>Вручную</span>
-                                    </div>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-
-                                <div class="mb-5">
-                                    <label for="exampleFormControlTextarea1" class="form-label fs-4">Description</label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <span>Шаблон</span>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                    </label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="titleSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="titleSwitch">
+                                            </div>
+                                            <label for="titleSwitch">Вручную</label>
                                         </div>
-                                        <span>Вручную</span>
+                                        <textarea class="form-control" id="titleTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-
-                                <div class="mb-5">
-                                    <label for="exampleFormControlTextarea1" class="form-label fs-4">Keywords</label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <span>Шаблон</span>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                    <!-- Description -->
+                                    <div class="mb-5">
+                                        <label for="descTextarea" class="form-label fs-4">Description</label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="descSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="descSwitch">
+                                            </div>
+                                            <label for="descSwitch">Вручную</label>
                                         </div>
-                                        <span>Вручную</span>
+                                        <textarea class="form-control" id="descTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <div class="mb-5">
-                                    <label for="exampleFormControlTextarea1" class="form-label fs-4">URL</label>
-                                    <div class="d-flex mb-2 text-muted">
-                                        <span>Шаблон</span>
-                                        <div class="form-check form-switch ps-0 mx-4">
-                                            <input class="form-check-input m-0 float-none" type="checkbox" id="flexSwitchCheckDefault">
+                                    <!-- Keywords -->
+                                    <div class="mb-5">
+                                        <label for="keywordsTextarea" class="form-label fs-4">Keywords</label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="keywordsSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="keywordsSwitch">
+                                            </div>
+                                            <label for="keywordsSwitch">Вручную</label>
                                         </div>
-                                        <span>Вручную</span>
+                                        <textarea class="form-control" id="keywordsTextarea" rows="3"></textarea>
                                     </div>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <!-- URL -->
+                                    <div class="mb-5">
+                                        <label for="urlTextarea" class="form-label fs-4">URL</label>
+                                        <div class="d-flex mb-2 text-muted">
+                                            <label for="urlSwitch">Шаблон</label>
+                                            <div class="form-check form-switch ps-0 mx-4">
+                                                <input class="form-check-input m-0" type="checkbox" id="urlSwitch">
+                                            </div>
+                                            <label for="urlSwitch">Вручную</label>
+                                        </div>
+                                        <textarea class="form-control" id="urlTextarea" rows="3"></textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- SEO end -->
                     </div>
                 </div>
             </article>
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Add Group Modal -->
     <div class="modal fade" id="addGroupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addGroupModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addGroupModalLabel">Добавить группу</h5>
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <h5 class="modal-title fs-4.4" id="addGroupModalLabel">Добавить группу</h5>
                 </div>
-                <div class="modal-body">
-                    <span>Добавить группу</span>
-
+                <div class="modal-body d-flex align-items-baseline justify-content-center p-5">
+                    <label class="w-25 fs-4.4" for="addgroup">Добавить группу</label>
+                    <input class="form-control w-75" type="text" name="" id="addgroup">
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Сохранить</button>
+                <div class="modal-footer pb-4">
+                    <button type="button" class="btn btn-primary me-4">Сохранить</button>
                     <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Option Modal -->
+    <div class="modal fade" id="addOptionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-4.4" id="addOptionModalLabel">Добавить параметр</h5>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-end p-5">
+                    <div class="d-flex align-items-center">
+                        <label class="fs-4.4 me-5" for="addgroup">Добавить параметр</label>
+                        <input class="form-control" type="text" name="" id="addgroup">
+                    </div>
+                </div>
+                <div class="modal-footer pb-4">
+                    <button type="button" class="btn btn-primary me-3">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Option Values Modal -->
+    <div class="modal fade" id="addOptionValueModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOptionValueModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-4.4" id="addOptionValueModalLabel">Добавить значение</h5>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-end p-5">
+                    <div class="d-flex align-items-center">
+                        <label class="fs-4.4 me-5" for="addgroup">Добавить значение</label>
+                        <input class="form-control" type="text" name="" id="addgroup">
+                        <button class="btn btn-link btn-show p-1 ms-3"></button>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <input class="form-control" type="text" name="" id="addgroup">
+                        <button class="btn btn-link btn-delete-3 p-1 ms-3"></button>
+                    </div>
+                </div>
+                <div class="modal-footer pb-4">
+                    <button type="button" class="btn btn-primary me-3">Сохранить</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Отменить</button>
+                    <button type="button" class="btn btn-outline-primary ms-3">Добавить несколько</button>
                 </div>
             </div>
         </div>

@@ -6,35 +6,270 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=1920">
-    <title>Admin</title>
+    <title>Каталог - Admin</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="position-relative h-100">
-
-    <div class="d-flex h-100">
-        <!-- нижний блок -->
-        <footer class="bg-white shadow-lg position-fixed bottom-0 mt-3 ms-4 w-100 d-flex align-items-center ps- pe-5" style="height: 4rem; padding-left: 100px;">
+<body class="position-relative h-100 d-flex">
+    <!-- left nav -->
+    <nav class="navigation position-fixed shadow-sm bg-white top-0 bottom-0 start-0 h-100 overflow-auto-hidden">
+        <a href="index.html" class="my-4 d-block text-center">
+            <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
+        </a>
+        <div class="nav-item mx-auto">
+            <div class="nav-link active text-center px-0">
+                <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
+            </div>
+        </div>
+        <div>
+            <div class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="nav-icon" src="img/icons/icon1.svg">
+                    <span>Структура сайта</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="edit.html">
+                    <img class="nav-icon" src="img/icons/icon2.svg">
+                    <span>Каталог</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="items.html">
+                    <img class="nav-icon" src="img/icons/icon3.svg">
+                    <span>Товары</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="photos.html">
+                    <img class="nav-icon" src="img/icons/icon4.svg">
+                    <span>Фильтрация</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="promo.html">
+                    <img class="nav-icon" src="img/icons/icon5.svg">
+                    <span>Квиз</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon6.svg">
+                    <span>Новости</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon7.svg">
+                    <span>Отзывы</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon8.svg">
+                    <span>Вакансии</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon9.svg">
+                    <span>Сотрудники</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon10.svg">
+                    <span>Домен и хостинг</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon11.svg">
+                    <span>Настройки</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon12.svg">
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- top nav -->
+        <nav class="bg-white shadow w-100 d-flex align-items-center py-2" style="padding-left: 130px;">
+            <div class="d-inline-block" style="width: 19rem;">
+                <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
+                <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                    </datalist>
+            </div>
+            <button class="btn btn-link btn-filter p-0 ms-5"></button>
+        </nav>
+        <!-- main content -->
+        <main class="d-flex mb-5" style="margin-left: 100px; height: 55rem;">
+            <!-- left panel -->
+            <article class="bg-white mt-4 ms-4 col-8" style="width: 78rem;">
+                <div class="d-flex align-items-center justify-content-between py-2 px-4 border-bottom">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb fw-bold mb-0">
+                            <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                            <li class="breadcrumb-item active fw-normal" aria-current="page">Список</li>
+                        </ol>
+                    </nav>
+                    <button class="btn btn-primary ms-5">Добавить категорию</button>
+                    <select class="form-select border-0 fs-5 w-auto">
+                    <option value="1" selected>Показывать по 20</option>
+                    <option value="2">Показывать по 30</option>
+                </select>
+                </div>
+                <div class="px-4">
+                    <div class="d-flex fs-5 p-4">
+                        <div class="col-6 ms-4">Название</div>
+                        <div class="col-2 text-center">Кол-во</div>
+                        <div class="col-2">Статус</div>
+                    </div>
+                    <div class="mt-0 overflow-auto" style="height: 46rem;">
+                        <div>
+                            <input class="form-check-input me-3 my-auto position-absolute" type="checkbox">
+                            <div class="d-flex border p-3 box-2 flex-grow-1">
+                                <div class="col-1" style="width: 3rem;">
+                                    <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
+                                </div>
+                                <div class="col-6">Для влюбленных</div>
+                                <div class="col-2 text-center">1</div>
+                                <div class="col-2">Отображается</div>
+                                <div class="ms-auto col-1 d-flex justify-content-end">
+                                    <button class="btn btn-link btn-edit p-1"></button>
+                                    <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                </div>
+                            </div>
+                            <div class="collapse" id="catalog1">
+                                <input class="form-check-input me-3 position-absolute" type="checkbox">
+                                <div class="d-flex border-bottom p-3 box-2">
+                                    <div class="col-1" style="width: 3rem;"></div>
+                                    <div class="col-7">Вкусные подарки Любовь</div>
+                                    <div class="col-1 text-center">1</div>
+                                    <div class="col-2">Отображается</div>
+                                    <div class="ms-auto col-1 d-flex justify-content-end">
+                                        <button class="btn btn-link btn-edit p-1"></button>
+                                        <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="catalog1">
+                                <input class="form-check-input me-3 position-absolute" type="checkbox">
+                                <div class="d-flex border-bottom p-3 box-2">
+                                    <div class="col-1" style="width: 3rem;">
+                                        <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
+                                    </div>
+                                    <div class="col-7">Другое</div>
+                                    <div class="col-1 text-center">1</div>
+                                    <div class="col-2">Отображается</div>
+                                    <div class="ms-auto col-1 d-flex justify-content-end">
+                                        <button class="btn btn-link btn-edit p-1"></button>
+                                        <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="form-check-input me-3 position-absolute" type="checkbox">
+                            <div class="d-flex border-bottom p-3 box-2">
+                                <div class="col-1" style="width: 3rem;"></div>
+                                <div class="col-7">Товары 18+</div>
+                                <div class="col-1 text-center">1</div>
+                                <div class="col-2">Отображается</div>
+                                <div class="ms-auto col-1 d-flex justify-content-end">
+                                    <button class="btn btn-link btn-edit p-1"></button>
+                                    <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- right panel -->
+            <aside class="bg-white mt-4 ms-4 py-5 px-4 d-flex flex-column" style="width: 27rem;">
+                <div class="mb-auto">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
+                    </div>
+                    <select class="form-select mb-3">
+                        <option value="1" selected>Главная категория</option>
+                        <option value="2">Категория 2</option>
+                        <option value="3">Категория 3</option>
+                    </select>
+                    <select class="form-select mb-3">
+                        <option value="1" selected>Вкусные подарки Любовь</option>
+                        <option value="2">Категория 2</option>
+                        <option value="3">Категория 3</option>
+                    </select>
+                    <select class="form-select mb-3">
+                        <option value="1" selected>Другое</option>
+                        <option value="2">Другое 2</option>
+                        <option value="3">Другое 3</option>
+                    </select>
+                    <div class="d-flex align-items-center mb-3">
+                        <label for="" class="form-label w-50 mb-0">Акция</label>
+                        <input type="text" class="form-control text-end w-50" value="2">
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <label for="" class="form-label w-50 mb-0">Порядковый номер</label>
+                        <select class="form-select w-50">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
+                        <label class="form-check-label" for="status-switch">Статус</label>
+                        <div class="d-flex align-items-center fs-6 flex-row-reverse">
+                            <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
+                            <span class="text-muted me-4 status-state"></span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span>Дата изменения</span>
+                        <span class="text-muted">24.02.21</span>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <div class="d-flex">
+                        <button class="btn btn-outline-primary me-auto px-5">Сохранить</button>
+                        <button class="btn btn-outline-primary">Посмотреть</button>
+                    </div>
+                    <a href="cat-edit.html" class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</a>
+                </div>
+            </aside>
+        </main>
+        <!-- bottom nav -->
+        <footer class="bg-white shadow-lg position-fixed py-2 bottom-0 mt-3 w-100 d-flex align-items-center pe-5" style="padding-left: 130px;">
             <div>Выбрано: 4 элемента</div>
-
             <div class="d-flex align-items-center ms-5">
                 <label for="" class="form-label mb-0 me-3 text-nowrap">Перенести в</label>
-                <select class="form-select" style="width: 10.9rem;">
-            <option value="1" selected>1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
+                <!-- <select class="form-select" style="width: 10.9rem;">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> -->
+                <div class="form-control rounded">
+                    <input type="text" class="border-0">
+                    <button class="border-0 p-1 btn-link"></button>
+                </div>
             </div>
             <div class="d-flex align-items-center ms-5">
                 <label for="" class="form-label mb-0 me-3 text-nowrap">Акции</label>
                 <select class="form-select" style="width: 10.9rem;">
-            <option value="1" selected>1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
             </div>
-
             <nav aria-label="..." class="ms-auto">
                 <ul class="pagination mb-0">
                     <li class="page-item disabled">
@@ -59,274 +294,13 @@
                     </li>
                 </ul>
             </nav>
-
         </footer>
-        <nav class="navigation position-fixed shadow-sm d-lex fle-column align-items-stretch bg-white top-0 bottom-0 start-0 h-100 d-inline-block overflow-auto-hidden">
-            <a href="index.html" class="my-4 d-block text-center">
-                <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
-            </a>
-            <div class="nav-item mx-auto">
-                <div class="nav-link active text-center px-0">
-                    <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
-                </div>
-            </div>
-            <div class="">
-                <div class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        <img class="nav-icon" src="img/icons/icon1.svg">
-                        <span>Структура сайта</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="edit.html">
-                        <img class="nav-icon" src="img/icons/icon2.svg">
-                        <span>Каталог</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="items.html">
-                        <img class="nav-icon" src="img/icons/icon3.svg">
-                        <span>Товары</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="photos.html">
-                        <img class="nav-icon" src="img/icons/icon4.svg">
-                        <span>Фильтрация</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="promo.html">
-                        <img class="nav-icon" src="img/icons/icon5.svg">
-                        <span>Квиз</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon6.svg">
-                        <span>Новости</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon7.svg">
-                        <span>Отзывы</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon8.svg">
-                        <span>Вакансии</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon9.svg">
-                        <span>Сотрудники</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon10.svg">
-                        <span>Домен и хостинг</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon11.svg">
-                        <span>Настройки</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon12.svg">
-                        <span>Выйти</span>
-                    </a>
-                </div>
-            </div>
-
-        </nav>
-
-        <div>
-            <!-- верхний блок -->
-            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block d-flex align-items-center" style="height: 4rem; padding-left: 130px;">
-                <div class="d-inline-block" style="width: 19rem;">
-                    <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
-                    <datalist id="datalistOptions">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
-                </div>
-                <button class="btn btn-link btn-filter p-0 ms-5"></button>
-            </nav>
-
-            <!-- главное -->
-            <div>
-                <div class="d-flex mb-5" style="margin-left: 100px;">
-                    <article class="bg-white mt-4 ms-4 col-8" style="width: 78rem; height: 55rem;">
-                        <div class="d-flex align-items-center justify-content-between py-2 px-4 border-bottom">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb fw-bold mb-0">
-                                    <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-                                    <li class="breadcrumb-item active fw-normal" aria-current="page">Список</li>
-                                </ol>
-                            </nav>
-                            <button class="btn btn-primary ms-5">Добавить категорию</button>
-                            <select class="form-select border-0 fs-5 w-auto">
-                                <option value="1" selected>Показывать по 20</option>
-                                <option value="2">Показывать по 30</option>
-                            </select>
-                        </div>
-                        <div class="px-4">
-
-                            <div class="d-flex fs-5 p-4">
-                                <div class="col-6 ms-4">Название</div>
-                                <div class="col-2 text-center">Кол-во</div>
-                                <div class="col-2">Статус</div>
-                            </div>
-
-                            <div class="mt-0 overflow-auto" style="height: 46rem;">
-
-
-                                <div class="">
-                                    <input class="form-check-input me-3 my-auto position-absolute" type="checkbox">
-                                    <div class="d-flex border p-3 box-2 flex-grow-1">
-                                        <div class="col-1" style="width: 3rem;">
-                                            <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                        </div>
-                                        <div class="col-6">Для влюбленных</div>
-                                        <div class="col-2 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-3"></button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <input class="form-check-input me-3 position-absolute" type="checkbox">
-                                        <div class="d-flex border-bottom p-3 box-2">
-                                            <div class="col-1" style="width: 3rem;"></div>
-                                            <div class="col-7">Вкусные подарки Любовь</div>
-                                            <div class="col-1 text-center">1</div>
-                                            <div class="col-2">Отображается</div>
-                                            <div class="ms-auto col-1 d-flex justify-content-end">
-                                                <button class="btn btn-link btn-edit p-1"></button>
-                                                <button class="btn btn-link btn-delete p-1 ms-3"></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="catalog1">
-                                        <input class="form-check-input me-3 position-absolute" type="checkbox">
-                                        <div class="d-flex border-bottom p-3 box-2">
-                                            <div class="col-1" style="width: 3rem;">
-                                                <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                            </div>
-                                            <div class="col-7">Другое</div>
-                                            <div class="col-1 text-center">1</div>
-                                            <div class="col-2">Отображается</div>
-                                            <div class="ms-auto col-1 d-flex justify-content-end">
-                                                <button class="btn btn-link btn-edit p-1"></button>
-                                                <button class="btn btn-link btn-delete p-1 ms-3"></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input me-3 position-absolute" type="checkbox">
-                                    <div class="d-flex border-bottom p-3 box-2">
-
-                                        <div class="col-1" style="width: 3rem;"></div>
-                                        <div class="col-7">Товары 18+</div>
-                                        <div class="col-1 text-center">1</div>
-                                        <div class="col-2">Отображается</div>
-                                        <div class="ms-auto col-1 d-flex justify-content-end">
-                                            <button class="btn btn-link btn-edit p-1"></button>
-                                            <button class="btn btn-link btn-delete p-1 ms-3"></button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </article>
-
-                    <aside class="bg-white mt-4 ms-4 py-5 px-4 d-flex flex-column" style="width: 27rem; height: 55rem;">
-
-                        <div class="mb-auto">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
-                            </div>
-
-                            <select class="form-select mb-3">
-                            <option value="1" selected>Главная категория</option>
-                            <option value="2">Категория 2</option>
-                            <option value="3">Категория 3</option>
-                        </select>
-
-                            <select class="form-select mb-3">
-                            <option value="1" selected>Вкусные подарки Любовь</option>
-                            <option value="2">Категория 2</option>
-                            <option value="3">Категория 3</option>
-                        </select>
-
-                            <select class="form-select mb-3">
-                            <option value="1" selected>Другое</option>
-                            <option value="2">Другое 2</option>
-                            <option value="3">Другое 3</option>
-                        </select>
-
-                            <div class="d-flex align-items-center mb-3">
-                                <label for="" class="form-label w-50 mb-0">Акция</label>
-                                <input type="text" class="form-control text-end w-50" value="2">
-                            </div>
-
-                            <div class="d-flex align-items-center mb-3">
-                                <label for="" class="form-label w-50 mb-0">Порядковый номер</label>
-                                <select class="form-select w-50">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-
-                            <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
-                                <label class="form-check-label" for="status-switch">Статус</label>
-                                <div class="d-flex align-items-center fs-6 flex-row-reverse">
-                                    <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
-                                    <span class="text-muted me-4 status-state"></span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center justify-content-between">
-                                <span>Дата изменения</span>
-                                <span class="text-muted">24.02.21</span>
-                            </div>
-                        </div>
-
-                        <div class="mt-auto">
-                            <div class="d-flex">
-                                <button class="btn btn-outline-primary me-auto px-5">Сохранить</button>
-                                <button class="btn btn-outline-primary">Посмотреть</button>
-                            </div>
-                            <a href="cat-edit.html" class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</a>
-                        </div>
-
-                    </aside>
-                </div>
-
-
-            </div>
-        </div>
-
     </div>
 
-
     <script src="js/bootstrap.js"></script>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/comboTreePlugin.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
