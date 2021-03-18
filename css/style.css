@@ -280,4 +280,32 @@ input[type=file] {
 .btn-3:hover {
   color: #392DFF;
 }
+
+.level-1,
+.level-2,
+.level-3,
+.children {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.level-2 > .col-6 {
+  padding-left: 25px;
+}
+
+.level-3 > .col-6 {
+  padding-left: 40px;
+}
+
+.level-1 > .col-6,
+.level-2 > .col-6,
+.level-3 > .col-6 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 /*# sourceMappingURL=style.css.map */

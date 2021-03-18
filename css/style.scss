@@ -269,3 +269,25 @@ input[type=file] {
         color: $color1;
     }
 }
+
+.level-1,
+.level-2,
+.level-3,
+.children {
+    display: flex;
+    flex-grow: 1;
+}
+
+.level-2>.col-6 {
+    padding-left: 25px;
+}
+
+.level-3>.col-6 {
+    padding-left: 40px;
+}
+
+.level-1>.col-6,
+.level-2>.col-6,
+.level-3>.col-6 {
+    flex-grow: 1;
+}

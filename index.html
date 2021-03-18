@@ -129,18 +129,26 @@
                 </div>
                 <div class="px-4">
                     <div class="d-flex fs-5 p-4">
-                        <div class="col-6 ms-4">Название</div>
+                        <div class="col-7 ms-4">Название</div>
                         <div class="col-2 text-center">Кол-во</div>
                         <div class="col-2">Статус</div>
                     </div>
+
+
+
+
                     <div class="mt-0 overflow-auto" style="height: 46rem;">
-                        <div>
-                            <input class="form-check-input me-3 my-auto position-absolute" type="checkbox">
-                            <div class="d-flex border p-3 box-2 flex-grow-1">
-                                <div class="col-1" style="width: 3rem;">
-                                    <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
+
+                        <!-- parent line -->
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3 my-auto " type="checkbox">
+                            <div class="level-1 border p-3 box-2 flex-grow-1">
+                                <div class="d-flex col-6">
+                                    <div class="col-1" style="width: 2.6rem;">
+                                        <button class="btn btn-link btn-show p-1 me-3" type="button"></button>
+                                    </div>
+                                    <div class="col-6">Для влюбленных</div>
                                 </div>
-                                <div class="col-6">Для влюбленных</div>
                                 <div class="col-2 text-center">1</div>
                                 <div class="col-2">Отображается</div>
                                 <div class="ms-auto col-1 d-flex justify-content-end">
@@ -148,41 +156,67 @@
                                     <button class="btn btn-link btn-delete p-1 ms-3"></button>
                                 </div>
                             </div>
-                            <div class="collapse" id="catalog1">
-                                <input class="form-check-input me-3 position-absolute" type="checkbox">
-                                <div class="d-flex border-bottom p-3 box-2">
-                                    <div class="col-1" style="width: 3rem;"></div>
-                                    <div class="col-7">Вкусные подарки Любовь</div>
-                                    <div class="col-1 text-center">1</div>
-                                    <div class="col-2">Отображается</div>
-                                    <div class="ms-auto col-1 d-flex justify-content-end">
-                                        <button class="btn btn-link btn-edit p-1"></button>
-                                        <button class="btn btn-link btn-delete p-1 ms-3"></button>
-                                    </div>
+                        </div>
+                        <!-- children line -->
+                        <div class="d-flex align-items-center" id="catalog1">
+                            <input class="form-check-input me-3 " type="checkbox">
+                            <div class="level-2 border p-3 box-2">
+                                <div class="d-flex col-6">
+                                    <div class="col-1" style="width: 2.6rem;"></div>
+                                    <div class="">Вкусные подарки Любовь</div>
                                 </div>
-                            </div>
-                            <div class="collapse" id="catalog1">
-                                <input class="form-check-input me-3 position-absolute" type="checkbox">
-                                <div class="d-flex border-bottom p-3 box-2">
-                                    <div class="col-1" style="width: 3rem;">
-                                        <button class="btn btn-link btn-show p-1 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#catalog1" aria-expanded="false" aria-controls="catalog1"></button>
-                                    </div>
-                                    <div class="col-7">Другое</div>
-                                    <div class="col-1 text-center">1</div>
-                                    <div class="col-2">Отображается</div>
-                                    <div class="ms-auto col-1 d-flex justify-content-end">
-                                        <button class="btn btn-link btn-edit p-1"></button>
-                                        <button class="btn btn-link btn-delete p-1 ms-3"></button>
-                                    </div>
+                                <div class="col-2 text-center">1</div>
+                                <div class="col-2">Отображается</div>
+                                <div class="ms-auto col-1 d-flex justify-content-end">
+                                    <button class="btn btn-link btn-edit p-1"></button>
+                                    <button class="btn btn-link btn-delete p-1 ms-3"></button>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <input class="form-check-input me-3 position-absolute" type="checkbox">
-                            <div class="d-flex border-bottom p-3 box-2">
-                                <div class="col-1" style="width: 3rem;"></div>
-                                <div class="col-7">Товары 18+</div>
-                                <div class="col-1 text-center">1</div>
+                        <!-- children line -->
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3 " type="checkbox">
+                            <div class="level-2 border p-3 box-2">
+                                <div class="d-flex col-6">
+                                    <div class="col-1" style="width: 2.6rem;">
+                                        <button class="btn btn-link btn-show p-1 me-3" type="button"></button>
+                                    </div>
+                                    <div class="col-7">Другое</div>
+                                </div>
+                                <div class="col-2 text-center">1</div>
+                                <div class="col-2">Скрыт</div>
+                                <div class="ms-auto col-1 d-flex justify-content-end">
+                                    <button class="btn btn-link btn-edit p-1"></button>
+                                    <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- children line -->
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3 " type="checkbox">
+                            <div class="level-3 border p-3 box-2">
+                                <div class="d-flex col-6">
+                                    <div class="col-1" style="width: 2.6rem;">
+                                    </div>
+                                    <div class="col-7">Другое</div>
+                                </div>
+                                <div class="col-2 text-center">23</div>
+                                <div class="col-2">Активен</div>
+                                <div class="ms-auto col-1 d-flex justify-content-end">
+                                    <button class="btn btn-link btn-edit p-1"></button>
+                                    <button class="btn btn-link btn-delete p-1 ms-3"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- parent line -->
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="level-1 border p-3 box-2">
+                                <div class="d-flex col-6">
+                                    <div class="col-1" style="width: 2.6rem;"></div>
+                                    <div class="">Товары 18+</div>
+                                </div>
+                                <div class="col-2 text-center">1</div>
                                 <div class="col-2">Отображается</div>
                                 <div class="ms-auto col-1 d-flex justify-content-end">
                                     <button class="btn btn-link btn-edit p-1"></button>
