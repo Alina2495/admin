@@ -11,343 +11,322 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="position-relative h-100">
-
-    <div class="d-flex h-100">
-        <nav class="navigation position-fixed shadow-sm d-lex fle-column align-items-stretch bg-white top-0 bottom-0 start-0 h-100 d-inline-block overflow-auto-hidden">
-            <a href="index.html" class="my-4 d-block text-center">
-                <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
-            </a>
-            <div class="nav-item mx-auto">
-                <div class="nav-link active text-center px-0">
-                    <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
-                </div>
-            </div>
-            <div class="">
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon1.svg">
-                        <span>Структура сайта</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon2.svg">
-                        <span>Каталог</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="items.html">
-                        <img class="nav-icon" src="img/icons/icon3.svg">
-                        <span>Товары</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon4.svg">
-                        <span>Фильтрация</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon5.svg">
-                        <span>Квиз</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon6.svg">
-                        <span>Новости</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon7.svg">
-                        <span>Отзывы</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon8.svg">
-                        <span>Вакансии</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon9.svg">
-                        <span>Сотрудники</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon10.svg">
-                        <span>Домен и хостинг</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon11.svg">
-                        <span>Настройки</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon12.svg">
-                        <span>Выйти</span>
-                    </a>
-                </div>
-            </div>
-
-        </nav>
-
-        <div>
-            <!-- верхний блок -->
-            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block ps- d-flex align-items-center" style="height: 4rem; padding-left: 130px;">
-                <div class="d-inline-block" style="width: 19rem;">
-                    <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
-                    <datalist id="datalistOptions">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
-                </div>
-                <button class="btn btn-link btn-filter p-0 ms-5"></button>
-            </nav>
-
-            <!-- главное -->
-            <div>
-                <div class="d-flex mb-5" style="margin-left: 100px;">
-                    <article class="bg-white mt-4 ms-4 col-8" style="width: 78rem; height: 55rem;">
-                        <div class="d-flex align-items-center py-2 px-4 border-bottom">
-                            <nav aria-label="breadcrumb" class="me-5 fs-4.4">
-                                <ol class="breadcrumb fw-bold mb-0">
-                                    <li class="breadcrumb-item"><a href="#">Акции</a></li>
-                                    <li class="breadcrumb-item active fw-normal" aria-current="page">Список</li>
-                                </ol>
-                            </nav>
-                            <button class="btn btn-primary ms-5">Добавить акцию</button>
-                        </div>
-                        <div class="fs-5.5 px-4">
-
-                            <div class="d-flex p-3">
-                                <div class="col-6 ps-4 ms-3">Акции</div>
-                                <div class="col-2">Дата начала</div>
-                                <div class="col-2">Дата окончания</div>
-                                <div class="col-2">Скидка</div>
-                            </div>
-
-                            <div class="overflow-auto promo-list" style="height: 46rem;">
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
-                                        <div class="col-6">Две по цене одной</div>
-                                        <div class="col-2">01.03.2020</div>
-                                        <div class="col-2">11.03.2020</div>
-                                        <div class="col-2">15%</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <div class="d-flex flex-grow-1 border p-3 box-2">
-                                        <div class="col-6">Утренняя акция пенсионерам</div>
-                                        <div class="col-2">23.01.2021</div>
-                                        <div class="col-2">16.04.2021</div>
-                                        <div class="col-2">4%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </article>
-
-                    <!-- правая панель -->
-                    <aside class="bg-white mt-4 ms-4 py-5 px-4 d-flex flex-column" style="width: 27rem; height: 55rem;">
-                        <div class="mb-auto fs-5.5">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <span>Категории</span>
-                                <span>5</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <span>Товары</span>
-                                <span>23</span>
-                            </div>
-
-                            <div class="mb-3 d-flex justify-content-between align-items-baseline">
-                                <label for="date-input-1">Срок</label>
-                                <div>
-                                    <div class="mb-2 d-flex align-items-center">
-                                        <label for="from" class="me-4">от</label>
-                                        <input class="form-control" type="text" id="from" name="from" autocomplete="off">
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <label for="to" class="me-4">до</label>
-                                        <input class="form-control" type="text" id="to" name="to" autocomplete="off">
-                                    </div>
-                                    <!-- <div class="mb-2 d-flex align-items-center">
-                                        <label for="date-input-1" class="me-4">от</label>
-                                        <input class="form-control" type="date" name="" id="date-input-1">
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <label for="date-input-2" class="me-4">до</label>
-                                        <input class="form-control" type="date" name="" id="date-input-2">
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
-                                <label class="form-check-label" for="status-switch">Статус</label>
-                                <div class="d-flex align-items-center fs-6 flex-row-reverse">
-                                    <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
-                                    <span class="text-muted me-4 status-state"></span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <span>Дата изменения</span>
-                                <span class="text-muted">24.02.21</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <label class="col-6" for="discount-select">Скидка</label>
-                                <div class="col-6 d-flex align-items-center">
-                                    <select class="form-select me-2" name="" id="discount-select">
-                                        <option selected disabled value="">Выбрать скидку</option>
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                    </select>
-                                    <span>%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-auto">
-                            <div class="d-flex">
-                                <button class="btn btn-outline-primary me-auto px-5">Сохранить</button>
-                                <button class="btn btn-outline-primary">Посмотреть</button>
-                            </div>
-                            <button class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</button>
-                        </div>
-                    </aside>
-
-                </div>
-
-
+<body class="position-relative h-100 d-flex">
+    <!-- left nav -->
+    <nav class="navigation position-fixed shadow-sm bg-white top-0 bottom-0 start-0 h-100 overflow-auto-hidden">
+        <a href="index.html" class="my-4 d-block text-center">
+            <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
+        </a>
+        <div class="nav-item mx-auto">
+            <div class="nav-link active text-center px-0">
+                <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
             </div>
         </div>
+        <div>
+            <div class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="nav-icon" src="img/icons/icon1.svg">
+                    <span>Структура сайта</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="edit.html">
+                    <img class="nav-icon" src="img/icons/icon2.svg">
+                    <span>Каталог</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="items.html">
+                    <img class="nav-icon" src="img/icons/icon3.svg">
+                    <span>Товары</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="photos.html">
+                    <img class="nav-icon" src="img/icons/icon4.svg">
+                    <span>Фильтрация</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="promo.html">
+                    <img class="nav-icon" src="img/icons/icon5.svg">
+                    <span>Квиз</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon6.svg">
+                    <span>Новости</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon7.svg">
+                    <span>Отзывы</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon8.svg">
+                    <span>Вакансии</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon9.svg">
+                    <span>Сотрудники</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon10.svg">
+                    <span>Домен и хостинг</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon11.svg">
+                    <span>Настройки</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon12.svg">
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- top nav -->
+        <nav class="bg-white shadow w-100 d-flex align-items-center py-2" style="padding-left: 130px;">
+            <div class="d-inline-block" style="width: 19rem;">
+                <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
+                <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                </datalist>
+            </div>
+            <button class="btn btn-link btn-filter p-0 ms-5"></button>
+        </nav>
+        <!-- main content -->
+        <main class="d-flex mb-5" style="margin-left: 100px; height: 55rem;">
+            <!-- left panel -->
+            <article class="bg-white mt-4 ms-4 col-8" style="width: 78rem;">
+                <div class="d-flex align-items-center py-2 px-4 border-bottom">
+                    <nav aria-label="breadcrumb" class="me-5 fs-4.4">
+                        <ol class="breadcrumb fw-bold mb-0">
+                            <li class="breadcrumb-item"><a href="#">Акции</a></li>
+                            <li class="breadcrumb-item active fw-normal" aria-current="page">Список</li>
+                        </ol>
+                    </nav>
+                    <button class="btn btn-primary ms-5">Добавить акцию</button>
+                </div>
+                <div class="fs-5.5 px-4">
+                    <div class="d-flex p-3">
+                        <div class="col-6 ps-4 ms-3">Акции</div>
+                        <div class="col-2">Дата начала</div>
+                        <div class="col-2">Дата окончания</div>
+                        <div class="col-2">Скидка</div>
+                    </div>
 
+                    <div class="overflow-auto promo-list" style="height: 46rem;">
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border mt-0 p-3 box-2">
+                                <div class="col-6">Две по цене одной</div>
+                                <div class="col-2">01.03.2020</div>
+                                <div class="col-2">11.03.2020</div>
+                                <div class="col-2">15%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input me-3" type="checkbox">
+                            <div class="d-flex flex-grow-1 border p-3 box-2">
+                                <div class="col-6">Утренняя акция пенсионерам</div>
+                                <div class="col-2">23.01.2021</div>
+                                <div class="col-2">16.04.2021</div>
+                                <div class="col-2">4%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <!-- right panel -->
+            <aside class="bg-white mt-4 ms-4 py-5 px-4 d-flex flex-column" style="width: 27rem;">
+                <div class="mb-auto fs-5.5">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span>Категории</span>
+                        <span>5</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span>Товары</span>
+                        <span>23</span>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-between align-items-baseline">
+                        <label for="date-input-1">Срок</label>
+                        <div>
+                            <div class="mb-2 d-flex align-items-center">
+                                <label for="from" class="me-4">от</label>
+                                <input class="form-control" type="text" id="from" name="from" autocomplete="off">
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <label for="to" class="me-4">до</label>
+                                <input class="form-control" type="text" id="to" name="to" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
+                        <label class="form-check-label" for="status-switch">Статус</label>
+                        <div class="d-flex align-items-center fs-6 flex-row-reverse">
+                            <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
+                            <span class="text-muted me-4 status-state"></span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span>Дата изменения</span>
+                        <span class="text-muted">24.02.21</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <label class="col-6" for="discount-input">Скидка</label>
+                        <div class="col-6 d-flex align-items-center">
+                            <input class="form-select me-2" placeholder="Выбрать скидку" name="" id="discountt-input" list="discount-select">
+                            <datalist id="discount-select">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                            </datalist>
+                            <span>%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <div class="d-flex">
+                        <button class="btn btn-outline-primary me-auto px-5">Сохранить</button>
+                        <button class="btn btn-outline-primary">Посмотреть</button>
+                    </div>
+                    <button class="btn btn-outline-primary w-100 mt-3">Расширенное редактирование</button>
+                </div>
+            </aside>
+        </main>
     </div>
-
-
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>

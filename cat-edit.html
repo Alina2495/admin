@@ -5,208 +5,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Редактирование чего-то</title>
+    <title>Редактирование Категории</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="position-relative h-100">
-
-    <div class="d-flex h-100">
-        <nav class="navigation position-fixed shadow-sm d-lex fle-column align-items-stretch bg-white top-0 bottom-0 start-0 h-100 d-inline-block overflow-auto-hidden">
-            <a href="index.html" class="my-4 d-block text-center">
-                <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
-            </a>
-            <div class="nav-item mx-auto">
-                <div class="nav-link active text-center px-0">
-                    <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
-                </div>
+<body class="position-relative h-100 d-flex">
+    <!-- left nav -->
+    <nav class="navigation position-fixed shadow-sm bg-white top-0 bottom-0 start-0 h-100 overflow-auto-hidden">
+        <a href="index.html" class="my-4 d-block text-center">
+            <img src="img/images/logo.svg" width="88" height="18" alt="Voo Voo Логотип">
+        </a>
+        <div class="nav-item mx-auto">
+            <div class="nav-link active text-center px-0">
+                <img class="rounded-circle user mx-auto" src="img/images/user.jpg" alt="Пользователь">
             </div>
-            <div class="">
-                <div class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        <img class="nav-icon" src="img/icons/icon1.svg">
-                        <span>Структура сайта</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="edit.html">
-                        <img class="nav-icon" src="img/icons/icon2.svg">
-                        <span>Каталог</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="items.html">
-                        <img class="nav-icon" src="img/icons/icon3.svg">
-                        <span>Товары</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="photos.html">
-                        <img class="nav-icon" src="img/icons/icon4.svg">
-                        <span>Фильтрация</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="promo.html">
-                        <img class="nav-icon" src="img/icons/icon5.svg">
-                        <span>Квиз</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon6.svg">
-                        <span>Новости</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon7.svg">
-                        <span>Отзывы</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon8.svg">
-                        <span>Вакансии</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon9.svg">
-                        <span>Сотрудники</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon10.svg">
-                        <span>Домен и хостинг</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon11.svg">
-                        <span>Настройки</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img class="nav-icon" src="img/icons/icon12.svg">
-                        <span>Выйти</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
+        </div>
         <div>
-            <!-- верхний блок -->
-            <nav class="bg-white shadow top-0 start-0 end-0 w-100 d-inline-block ps- d-flex align-items-center" style="height: 4rem; padding-left: 130px;">
-                <div class="d-inline-block" style="width: 19rem;">
-                    <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
-                    <datalist id="datalistOptions">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                    </datalist>
-                </div>
-                <button class="btn btn-link btn-filter p-0 ms-5"></button>
-            </nav>
-
-            <!-- main content -->
-            <article class="bg-white mt-4" style="width: 106rem; height: 55rem; margin-left: 130px;">
-                <!-- breadcrumb -->
-                <div class="py-3 px-4 border-bottom">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb fw-bold mb-0">
-                            <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-                            <li class="breadcrumb-item"><a href="#">Список</a></li>
-                            <li class="breadcrumb-item active fw-normal" aria-current="page">Редактировать</li>
-                        </ol>
-                    </nav>
-                </div>
-                <!-- tabs group -->
-                <div class=" px-5 pt-4">
-                    <!-- tabs links -->
-                    <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="characteristics-tab" data-bs-toggle="tab" data-bs-target="#characteristics" type="button" role="tab" aria-controls="characteristics" aria-selected="true">Характеристики</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="options-tab" data-bs-toggle="tab" data-bs-target="#options" type="button" role="tab" aria-controls="options" aria-selected="false">Параметры</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo" type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button>
-                        </li>
-                    </ul>
-                    <!-- tabs content -->
-                    <div class="tab-content pt-5" id="myTabContent">
-                        <!-- characteristics Tab -->
-                        <div class="tab-pane fade show active d-flx" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
-                            <div class="d-flex">
-                                <div class="col-5 pe-5">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
-                                    </div>
-                                    <select class="form-select mb-3">
+            <div class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img class="nav-icon" src="img/icons/icon1.svg">
+                    <span>Структура сайта</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="edit.html">
+                    <img class="nav-icon" src="img/icons/icon2.svg">
+                    <span>Каталог</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="items.html">
+                    <img class="nav-icon" src="img/icons/icon3.svg">
+                    <span>Товары</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="photos.html">
+                    <img class="nav-icon" src="img/icons/icon4.svg">
+                    <span>Фильтрация</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="promo.html">
+                    <img class="nav-icon" src="img/icons/icon5.svg">
+                    <span>Квиз</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon6.svg">
+                    <span>Новости</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon7.svg">
+                    <span>Отзывы</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon8.svg">
+                    <span>Вакансии</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon9.svg">
+                    <span>Сотрудники</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon10.svg">
+                    <span>Домен и хостинг</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon11.svg">
+                    <span>Настройки</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="nav-icon" src="img/icons/icon12.svg">
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- top nav -->
+        <nav class="bg-white shadow w-100 d-flex align-items-center py-2" style="padding-left: 130px;">
+            <div class="d-inline-block" style="width: 19rem;">
+                <input class="form-control ps-5 col-3 form-search" list="datalistOptions" id="exampleDataList" placeholder="Поиск...">
+                <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                </datalist>
+            </div>
+            <button class="btn btn-link btn-filter p-0 ms-5"></button>
+        </nav>
+        <!-- main content -->
+        <main class="bg-white mt-4" style="width: 106rem; height: 54rem; margin-left: 130px;">
+            <!-- breadcrumb -->
+            <div class="py-3 px-4 border-bottom">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb fw-bold mb-0">
+                        <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                        <li class="breadcrumb-item"><a href="#">Список</a></li>
+                        <li class="breadcrumb-item active fw-normal" aria-current="page">Редактировать</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- tabs group -->
+            <div class=" px-5 pt-4">
+                <!-- tabs links -->
+                <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="characteristics-tab" data-bs-toggle="tab" data-bs-target="#characteristics" type="button" role="tab" aria-controls="characteristics" aria-selected="true">Характеристики</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="options-tab" data-bs-toggle="tab" data-bs-target="#options" type="button" role="tab" aria-controls="options" aria-selected="false">Параметры</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo" type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button>
+                    </li>
+                </ul>
+                <!-- tabs content -->
+                <div class="tab-content pt-5" id="myTabContent">
+                    <!-- characteristics Tab -->
+                    <div class="tab-pane fade show active d-flx" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
+                        <div class="d-flex">
+                            <div class="col-5 pe-5">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название">
+                                </div>
+                                <select class="form-select mb-3">
                                         <option value="1" selected>Категория</option>
                                         <option value="2">Категория 2</option>
                                         <option value="3">Категория 3</option>
                                     </select>
-                                    <select class="form-select mb-3">
+                                <select class="form-select mb-3">
                                         <option value="1" selected>Акции</option>
                                         <option value="2">Категория 2</option>
                                         <option value="3">Категория 3</option>
                                     </select>
-                                    <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <label for="number-input" class="form-label w-50 mb-0">Порядковый номер</label>
-                                        <input value="2" type="text" class="form-control w-50 text-end" id="number-input" placeholder="Название">
-                                    </div>
-                                    <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
-                                        <label class="form-check-label" for="status-switch">Статус</label>
-                                        <div class="d-flex align-items-center fs-6 flex-row-reverse">
-                                            <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
-                                            <span class="text-muted me-4 status-state"></span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <span>Дата изменения</span>
-                                        <span class="text-muted">24.02.21</span>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <label for="number-input" class="form-label w-50 mb-0">Порядковый номер</label>
+                                    <input value="2" type="text" class="form-control w-50 text-end" id="number-input" placeholder="Название">
+                                </div>
+                                <div class="form-check form-switch mb-3 ps-0 d-flex justify-content-between">
+                                    <label class="form-check-label" for="status-switch">Статус</label>
+                                    <div class="d-flex align-items-center fs-6 flex-row-reverse">
+                                        <input class="form-check-input m-0 float-none" type="checkbox" id="status-switch">
+                                        <span class="text-muted me-4 status-state"></span>
                                     </div>
                                 </div>
-                                <div class="col-5 position-relative">
-                                    <div class="h2 position-absolute" style="top: -55px;">Фото</div>
-                                    <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Основное</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="plug-tab" data-bs-toggle="tab" data-bs-target="#plug" type="button" role="tab" aria-controls="plug" aria-selected="false">Заглушки</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content pt-5" id="myTabContent">
-                                        <!-- Main Photo Tab -->
-                                        <div class="tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="main-tab">
-                                            <div class="mb-3">
-                                                <span class="text-muted me-4">нажмите</span>
-                                                <div class="position-relative d-inline-block">
-                                                    <input type="file" class="top-0 start-0 w-100 h-100 position-absolute">
-                                                    <div class="btn btn-primary">Загрузить</div>
-                                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span>Дата изменения</span>
+                                    <span class="text-muted">24.02.21</span>
+                                </div>
+                            </div>
+                            <div class="col-5 position-relative">
+                                <div class="h2 position-absolute" style="top: -55px;">Фото</div>
+                                <ul class="nav nav-tabs fw-medium" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Основное</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="plug-tab" data-bs-toggle="tab" data-bs-target="#plug" type="button" role="tab" aria-controls="plug" aria-selected="false">Заглушки</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content pt-5" id="myTabContent">
+                                    <!-- Main Photo Tab -->
+                                    <div class="tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="main-tab">
+                                        <div class="mb-3">
+                                            <span class="text-muted me-4">нажмите</span>
+                                            <div class="position-relative d-inline-block">
+                                                <input type="file" class="top-0 start-0 w-100 h-100 position-absolute">
+                                                <div class="btn btn-primary">Загрузить</div>
                                             </div>
-                                            <div class="d-flex row row-cols-2 gx-4 align-items-start">
-                                                <div>
-                                                    <div class="border-dashed text-center text-muted d-flex flex-column align-items-center justify-content-center py-5" style="height: 20.625rem;">
-                                                        <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        </div>
+                                        <div class="d-flex row row-cols-2 gx-4 align-items-start">
+                                            <div>
+                                                <div class="border-dashed text-center text-muted d-flex flex-column align-items-center justify-content-center py-5" style="height: 20.625rem;">
+                                                    <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M54.1567 17.8931C51.1526 5.92548 39.0158 -1.34077 27.0482 1.66337C17.6959 4.01111 10.905 12.0942 10.2053 21.7113C3.56472 22.8064 -0.930829 29.0773 0.164276 35.7179C1.13777 41.6214 6.25317 45.9449 12.2363 45.9211H22.3915V41.8591H12.2363C7.74953 41.8591 4.11221 38.2217 4.11221 33.735C4.11221 29.2482 7.74953 25.6108 12.2363 25.6108C13.3581 25.6108 14.2674 24.7016 14.2674 23.5798C14.2572 13.4845 22.433 5.29231 32.5283 5.28228C41.2673 5.27352 48.7901 11.4517 50.4806 20.0255C50.6475 20.8816 51.3422 21.5356 52.2069 21.6503C57.7595 22.441 61.6196 27.5832 60.829 33.1357C60.1191 38.1216 55.862 41.8339 50.8258 41.8591H42.7017V45.9211H50.8258C58.6778 45.8974 65.0237 39.5128 64.9999 31.6609C64.9801 25.1248 60.5062 19.4441 54.1567 17.8931Z" fill="#392DFF"/>
                                                             <path d="M31.1048 26.2L22.9807 34.3241L25.8445 37.1878L30.5158 32.5368V52.0143H34.5779V32.5368L39.2289 37.1878L42.0927 34.3241L33.9686 26.2C33.1763 25.4124 31.897 25.4124 31.1048 26.2Z" fill="#392DFF"/>
                                                         </svg>
-                                                        <span class="mt-4 mb-5">или <span class="fw-bold">перетащите фотографию</span></span>
-                                                        <span>800 х 600</span>
-                                                    </div>
+                                                    <span class="mt-4 mb-5">или <span class="fw-bold">перетащите фотографию</span></span>
+                                                    <span>800 х 600</span>
                                                 </div>
-                                                <div>
-                                                    <div class="mb-3 d-flex" style="background-color: #E5E5E5; height: 20.625rem;">
-                                                        <svg class="m-auto" width="120" height="151" viewBox="0 0 120 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            </div>
+                                            <div>
+                                                <div class="mb-3 d-flex" style="background-color: #E5E5E5; height: 20.625rem;">
+                                                    <svg class="m-auto" width="120" height="151" viewBox="0 0 120 151" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M108.649 105.405H11.3513C9.20166 105.403 7.14083 104.548 5.62082 103.028C4.10081 101.508 3.24574 99.4469 3.24316 97.2973V38.9189C3.24574 36.7693 4.10081 34.7085 5.62082 33.1885C7.14083 31.6685 9.20166 30.8134 11.3513 30.8108H37.5924C37.9097 30.8108 38.22 30.7177 38.4849 30.543C38.7498 30.3683 38.9576 30.1198 39.0826 29.8281L42.2626 22.4092C42.6373 21.5342 43.2605 20.7884 44.0549 20.2641C44.8492 19.7398 45.78 19.46 46.7318 19.4595H73.268C74.2199 19.4596 75.1509 19.739 75.9456 20.263C76.7403 20.787 77.3638 21.5327 77.7388 22.4076L80.9188 29.8281C81.0439 30.1198 81.2517 30.3683 81.5166 30.543C81.7815 30.7177 82.0918 30.8108 82.4091 30.8108H108.649C110.798 30.8134 112.859 31.6685 114.379 33.1885C115.899 34.7085 116.754 36.7693 116.757 38.9189V97.2973C116.754 99.4469 115.899 101.508 114.379 103.028C112.859 104.548 110.798 105.403 108.649 105.405ZM11.3513 34.0541C10.061 34.0541 8.82363 34.5666 7.91129 35.479C6.99895 36.3913 6.48641 37.6287 6.48641 38.9189V97.2973C6.48641 98.5875 6.99895 99.8249 7.91129 100.737C8.82363 101.65 10.061 102.162 11.3513 102.162H108.649C109.939 102.162 111.176 101.65 112.089 100.737C113.001 99.8249 113.513 98.5875 113.513 97.2973V38.9189C113.513 37.6287 113.001 36.3913 112.089 35.479C111.176 34.5666 109.939 34.0541 108.649 34.0541H82.4075C81.4556 34.054 80.5246 33.7746 79.7299 33.2506C78.9352 32.7265 78.3117 31.9809 77.9367 31.106L74.7567 23.6854C74.6318 23.394 74.4242 23.1457 74.1596 22.971C73.895 22.7963 73.5851 22.7031 73.268 22.7027H46.7318C46.4145 22.7028 46.1042 22.7959 45.8393 22.9706C45.5744 23.1452 45.3666 23.3938 45.2415 23.6854L42.0615 31.1043C41.6868 31.9793 41.0637 32.7251 40.2693 33.2494C39.4749 33.7737 38.5442 34.0535 37.5924 34.0541H11.3513Z" fill="#909090"/>
                                                         <path d="M30.8109 34.054H16.2163C15.7863 34.054 15.3738 33.8831 15.0697 33.579C14.7656 33.2749 14.5947 32.8624 14.5947 32.4324V25.9459C14.5947 25.0857 14.9364 24.2608 15.5447 23.6526C16.1529 23.0443 16.9778 22.7026 17.838 22.7026H29.1893C30.0495 22.7026 30.8744 23.0443 31.4826 23.6526C32.0909 24.2608 32.4326 25.0857 32.4326 25.9459V32.4324C32.4326 32.8624 32.2617 33.2749 31.9576 33.579C31.6535 33.8831 31.241 34.054 30.8109 34.054ZM17.838 30.8107H29.1893V25.9459H17.838V30.8107Z" fill="#909090"/>
                                                         <path d="M41.8864 85.9459H4.86479C4.43471 85.9459 4.02224 85.7751 3.71813 85.471C3.41401 85.1669 3.24316 84.7544 3.24316 84.3243V51.8919C3.24316 51.4618 3.41401 51.0493 3.71813 50.7452C4.02224 50.4411 4.43471 50.2703 4.86479 50.2703H41.8864C42.3165 50.2703 42.729 50.4411 43.0331 50.7452C43.3372 51.0493 43.508 51.4618 43.508 51.8919C43.508 52.322 43.3372 52.7344 43.0331 53.0385C42.729 53.3427 42.3165 53.5135 41.8864 53.5135H6.48641V82.7027H41.8864C42.3165 82.7027 42.729 82.8736 43.0331 83.1777C43.3372 83.4818 43.508 83.8942 43.508 84.3243C43.508 84.7544 43.3372 85.1669 43.0331 85.471C42.729 85.7751 42.3165 85.9459 41.8864 85.9459Z" fill="#909090"/>
@@ -230,119 +227,119 @@
                                                         </clipPath>
                                                         </defs>
                                                         </svg>
-                                                    </div>
-                                                    <div class="text-muted">IMG_5846</div>
                                                 </div>
+                                                <div class="text-muted">IMG_5846</div>
                                             </div>
                                         </div>
-                                        <!-- Plug Photo Tab -->
-                                        <div class="tab-pane fade" id="plug" role="tabpanel" aria-labelledby="plug-tab">...</div>
                                     </div>
+                                    <!-- Plug Photo Tab -->
+                                    <div class="tab-pane fade" id="plug" role="tabpanel" aria-labelledby="plug-tab">...</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- characteristics Tab End -->
-                        <!-- Options Tab -->
-                        <div class="tab-pane fade" id="options" role="tabpanel" aria-labelledby="options-tab">
-                            <ul class="nav fw-medium border-bottom" id="myTab" role="tablist">
-                                <li role="presentation">
-                                    <button class="btn btn-3 active" id="common-group" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="common" aria-selected="true">Общие</button>
-                                </li>
-                                <li role="presentation">
-                                    <button class="btn btn-3" id="second-group" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Вторая группа</button>
-                                </li>
-                                <button type="button" class="btn btn-gray pe-5 order-1" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="common" role="tabpanel">
-                                    <div class="row row-cols-2 pt-3 pb-2 border-bottom">
-                                        <div>
-                                            <span class="text-muted fs-4.4 me-3">Название параметра</span>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <span class="text-muted fs-4.4 me-3">Значение параметра</span>
-                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
-                                            </div>
-                                            <button class="btn btn-link p-1 btn-search"></button>
-                                        </div>
+                    </div>
+                    <!-- characteristics Tab End -->
+                    <!-- Options Tab -->
+                    <div class="tab-pane fade" id="options" role="tabpanel" aria-labelledby="options-tab">
+                        <ul class="nav fw-medium border-bottom" id="myTab" role="tablist">
+                            <li role="presentation">
+                                <button class="btn btn-3 active" id="common-group" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="common" aria-selected="true">Общие</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="btn btn-3" id="second-group" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Вторая группа</button>
+                            </li>
+                            <button type="button" class="btn btn-gray pe-5 order-1" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="common" role="tabpanel">
+                                <div class="row row-cols-2 pt-3 pb-2 border-bottom">
+                                    <div>
+                                        <span class="text-muted fs-4.4 me-3">Название параметра</span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
                                     </div>
-                                    <div class="row row-cols-2 gx-0 fs-4.4">
-                                        <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
-                                            <li class="nav-item-3" role="presentation">
-                                                <button class="nav-link-3 active p-3 border" id="option-1-tab" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
-                                            </li>
-                                            <li class="nav-item-3" role="presentation">
-                                                <button class="nav-link-3 p-3 border" id="option-2-tab" data-bs-toggle="tab" data-bs-target="#option-2" type="button" role="tab" aria-controls="option-2" aria-selected="false">Память</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="option-1" role="tabpanel" aria-labelledby="option-1">
-                                                <div class="border p-3">27 дюймов</div>
-                                                <div class="border p-3">54 дюймов</div>
-                                                <div class="border p-3">27 дюймов</div>
-                                                <div class="border p-3">54 дюймов</div>
-                                                <div class="border p-3">27 дюймов</div>
-                                                <div class="border p-3">54 дюймов</div>
-                                            </div>
-                                            <div class="tab-pane fade" id="option-2" role="tabpanel" aria-labelledby="option-2">
-                                                <div class="border p-3">16гБ</div>
-                                                <div class="border p-3">16гБ</div>
-                                                <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum
-                                                    assumenda! Deleniti optio minus eius?</div>
-                                            </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="text-muted fs-4.4 me-3">Значение параметра</span>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
                                         </div>
+                                        <button class="btn btn-link p-1 btn-search"></button>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="second" role="tabpanel">
-                                    <div class="row row-cols-2 pt-3 pb-2 border-bottom">
-                                        <div>
-                                            <span class="text-muted fs-4.4 me-3">Название параметра</span>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
+                                <div class="row row-cols-2 gx-0 fs-4.4">
+                                    <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
+                                        <li class="nav-item-3" role="presentation">
+                                            <button class="nav-link-3 active p-3 border" id="option-1-tab" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
+                                        </li>
+                                        <li class="nav-item-3" role="presentation">
+                                            <button class="nav-link-3 p-3 border" id="option-2-tab" data-bs-toggle="tab" data-bs-target="#option-2" type="button" role="tab" aria-controls="option-2" aria-selected="false">Память</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="option-1" role="tabpanel" aria-labelledby="option-1">
+                                            <div class="border p-3">27 дюймов</div>
+                                            <div class="border p-3">54 дюймов</div>
+                                            <div class="border p-3">27 дюймов</div>
+                                            <div class="border p-3">54 дюймов</div>
+                                            <div class="border p-3">27 дюймов</div>
+                                            <div class="border p-3">54 дюймов</div>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <span class="text-muted fs-4.4 me-3">Значение параметра</span>
-                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
-                                            </div>
-                                            <button class="btn btn-link p-1 btn-search"></button>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-2 gx-0 fs-4.4">
-                                        <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
-                                            <li class="nav-item-3" role="presentation">
-                                                <button class="nav-link-3 active p-3 border" id="option-3-tab" data-bs-toggle="tab" data-bs-target="#option-3" type="button" role="tab" aria-controls="option-3" aria-selected="true">Цвет</button>
-                                            </li>
-                                            <li class="nav-item-3" role="presentation">
-                                                <button class="nav-link-3 p-3 border" id="option-4-tab" data-bs-toggle="tab" data-bs-target="#option-4" type="button" role="tab" aria-controls="option-4" aria-selected="false">Размер</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="option-3" role="tabpanel" aria-labelledby="option-3">
-                                                <div class="border p-3">зеленый</div>
-                                                <div class="border p-3">54 дюймов</div>
-                                                <div class="border p-3">27 дюймов</div>
-                                            </div>
-                                            <div class="tab-pane fade" id="option-4" role="tabpanel" aria-labelledby="option-4">
-                                                <div class="border p-3">16гБ</div>
-                                                <div class="border p-3">16гБ</div>
-                                                <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum
-                                                    assumenda! Deleniti optio minus eius?</div>
-                                            </div>
+                                        <div class="tab-pane fade" id="option-2" role="tabpanel" aria-labelledby="option-2">
+                                            <div class="border p-3">16гБ</div>
+                                            <div class="border p-3">16гБ</div>
+                                            <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum assumenda!
+                                                Deleniti optio minus eius?</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="second" role="tabpanel">
+                                <div class="row row-cols-2 pt-3 pb-2 border-bottom">
+                                    <div>
+                                        <span class="text-muted fs-4.4 me-3">Название параметра</span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="text-muted fs-4.4 me-3">Значение параметра</span>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
+                                        </div>
+                                        <button class="btn btn-link p-1 btn-search"></button>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-2 gx-0 fs-4.4">
+                                    <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
+                                        <li class="nav-item-3" role="presentation">
+                                            <button class="nav-link-3 active p-3 border" id="option-3-tab" data-bs-toggle="tab" data-bs-target="#option-3" type="button" role="tab" aria-controls="option-3" aria-selected="true">Цвет</button>
+                                        </li>
+                                        <li class="nav-item-3" role="presentation">
+                                            <button class="nav-link-3 p-3 border" id="option-4-tab" data-bs-toggle="tab" data-bs-target="#option-4" type="button" role="tab" aria-controls="option-4" aria-selected="false">Размер</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="option-3" role="tabpanel" aria-labelledby="option-3">
+                                            <div class="border p-3">зеленый</div>
+                                            <div class="border p-3">54 дюймов</div>
+                                            <div class="border p-3">27 дюймов</div>
+                                        </div>
+                                        <div class="tab-pane fade" id="option-4" role="tabpanel" aria-labelledby="option-4">
+                                            <div class="border p-3">16гБ</div>
+                                            <div class="border p-3">16гБ</div>
+                                            <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum assumenda!
+                                                Deleniti optio minus eius?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Options Tab End -->
-                        <!-- SEO Tab -->
-                        <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-tab">
-                            <div class="overflow-auto px-3" style="height: 40rem;">
-                                <div class="col-6">
-                                    <!-- Title -->
-                                    <div class="mb-5">
-                                        <label for="titleTextarea" class="form-label position-relative">
+                    </div>
+                    <!-- Options Tab End -->
+                    <!-- SEO Tab -->
+                    <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-tab">
+                        <div class="overflow-auto px-3" style="height: 40rem;">
+                            <div class="col-6">
+                                <!-- Title -->
+                                <div class="mb-5">
+                                    <label for="titleTextarea" class="form-label position-relative">
                                         <span class="fs-4">Title</span>
                                         <svg class="position-absolute" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="6" cy="6" r="6" fill="#3B2FFF"/>
@@ -354,59 +351,58 @@
                                             </div>
                                         </div>
                                     </label>
-                                        <div class="d-flex mb-2 text-muted">
-                                            <label for="titleSwitch">Шаблон</label>
-                                            <div class="form-check form-switch ps-0 mx-4">
-                                                <input class="form-check-input m-0" type="checkbox" id="titleSwitch">
-                                            </div>
-                                            <label for="titleSwitch">Вручную</label>
+                                    <div class="d-flex mb-2 text-muted">
+                                        <label for="titleSwitch">Шаблон</label>
+                                        <div class="form-check form-switch ps-0 mx-4">
+                                            <input class="form-check-input m-0" type="checkbox" id="titleSwitch">
                                         </div>
-                                        <textarea class="form-control" id="titleTextarea" rows="3"></textarea>
+                                        <label for="titleSwitch">Вручную</label>
                                     </div>
-                                    <!-- Description -->
-                                    <div class="mb-5">
-                                        <label for="descTextarea" class="form-label fs-4">Description</label>
-                                        <div class="d-flex mb-2 text-muted">
-                                            <label for="descSwitch">Шаблон</label>
-                                            <div class="form-check form-switch ps-0 mx-4">
-                                                <input class="form-check-input m-0" type="checkbox" id="descSwitch">
-                                            </div>
-                                            <label for="descSwitch">Вручную</label>
+                                    <textarea class="form-control" id="titleTextarea" rows="3"></textarea>
+                                </div>
+                                <!-- Description -->
+                                <div class="mb-5">
+                                    <label for="descTextarea" class="form-label fs-4">Description</label>
+                                    <div class="d-flex mb-2 text-muted">
+                                        <label for="descSwitch">Шаблон</label>
+                                        <div class="form-check form-switch ps-0 mx-4">
+                                            <input class="form-check-input m-0" type="checkbox" id="descSwitch">
                                         </div>
-                                        <textarea class="form-control" id="descTextarea" rows="3"></textarea>
+                                        <label for="descSwitch">Вручную</label>
                                     </div>
-                                    <!-- Keywords -->
-                                    <div class="mb-5">
-                                        <label for="keywordsTextarea" class="form-label fs-4">Keywords</label>
-                                        <div class="d-flex mb-2 text-muted">
-                                            <label for="keywordsSwitch">Шаблон</label>
-                                            <div class="form-check form-switch ps-0 mx-4">
-                                                <input class="form-check-input m-0" type="checkbox" id="keywordsSwitch">
-                                            </div>
-                                            <label for="keywordsSwitch">Вручную</label>
+                                    <textarea class="form-control" id="descTextarea" rows="3"></textarea>
+                                </div>
+                                <!-- Keywords -->
+                                <div class="mb-5">
+                                    <label for="keywordsTextarea" class="form-label fs-4">Keywords</label>
+                                    <div class="d-flex mb-2 text-muted">
+                                        <label for="keywordsSwitch">Шаблон</label>
+                                        <div class="form-check form-switch ps-0 mx-4">
+                                            <input class="form-check-input m-0" type="checkbox" id="keywordsSwitch">
                                         </div>
-                                        <textarea class="form-control" id="keywordsTextarea" rows="3"></textarea>
+                                        <label for="keywordsSwitch">Вручную</label>
                                     </div>
-                                    <!-- URL -->
-                                    <div class="mb-5">
-                                        <label for="urlTextarea" class="form-label fs-4">URL</label>
-                                        <div class="d-flex mb-2 text-muted">
-                                            <label for="urlSwitch">Шаблон</label>
-                                            <div class="form-check form-switch ps-0 mx-4">
-                                                <input class="form-check-input m-0" type="checkbox" id="urlSwitch">
-                                            </div>
-                                            <label for="urlSwitch">Вручную</label>
+                                    <textarea class="form-control" id="keywordsTextarea" rows="3"></textarea>
+                                </div>
+                                <!-- URL -->
+                                <div class="mb-5">
+                                    <label for="urlTextarea" class="form-label fs-4">URL</label>
+                                    <div class="d-flex mb-2 text-muted">
+                                        <label for="urlSwitch">Шаблон</label>
+                                        <div class="form-check form-switch ps-0 mx-4">
+                                            <input class="form-check-input m-0" type="checkbox" id="urlSwitch">
                                         </div>
-                                        <textarea class="form-control" id="urlTextarea" rows="3"></textarea>
+                                        <label for="urlSwitch">Вручную</label>
                                     </div>
+                                    <textarea class="form-control" id="urlTextarea" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <!-- SEO end -->
                     </div>
+                    <!-- SEO end -->
                 </div>
-            </article>
-        </div>
+            </div>
+        </main>
     </div>
 
     <!-- Add Group Modal -->

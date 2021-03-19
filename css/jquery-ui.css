@@ -1195,10 +1195,12 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-    border: 1px solid #008CFF;
+    /* border: 1px solid #008CFF; */
     background-color: #4EAAF5;
     color: white;
     font-weight: 600;
+    border: 1px solid white;
+    box-shadow: 0 0 0px 1px #008cff;
 }
 
 .ui-icon-background,
