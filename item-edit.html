@@ -198,7 +198,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row row-cols-4 g-3 overflow-auto align-content-start" style="height: 30rem;">
+                                <div class="row row-cols-4 g-3 overflow-auto align-content-start" style="height: 25rem;">
                                     <div>
                                         <div class="border mb-2 position-relative" style="height: 9.375rem;">
                                             <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
@@ -279,6 +279,16 @@
                                             <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
                                         </div>
                                     </div>
+                                    <div>
+                                        <div class="border mb-2 position-relative" style="height: 9.375rem;">
+                                            <input class="form-check-input start-0 bottom-0 ms-2 mb-2 position-absolute" type="checkbox" title="Выбрать">
+                                            <img class="w-100 h-100 box" src="https://randomwordgenerator.com/img/picture-generator/57e1d6434c51ac14f1dc8460962e33791c3ad6e04e507440762879dd974dc1_640.jpg" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="fw-medium text-nowrap text-truncate">Неприлично длинное название изображения очень</div>
+                                            <button class="btn btn-link btn-delete-2 p-1 flex-shrink-0" title="Удалить"></button>
+                                        </div>
+                                    </div>
                                 </div>
 
 
@@ -288,98 +298,78 @@
                     <!-- Main Tab End -->
                     <!-- Options Tab -->
                     <div class="tab-pane fade" id="options" role="tabpanel" aria-labelledby="options-tab">
-
-
-
-                        <ul class="nav fw-medium border-bottom" id="myTab" role="tablist">
-                            <li role="presentation">
-                                <button class="btn btn-3 active" id="common-group" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="common" aria-selected="true">Общие</button>
-                            </li>
-                            <li role="presentation">
-                                <button class="btn btn-3" id="second-group" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Вторая группа</button>
-                            </li>
-                            <button type="button" class="btn btn-gray pe-5 order-1" data-bs-toggle="modal" data-bs-target="#addGroupModal">Добавить группу</button>
-                        </ul>
-
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="common" role="tabpanel">
-                                <div class="row row-cols-2 pt-3 pb-2 border-bottom">
-                                    <div>
-                                        <span class="text-muted fs-4.4 me-3">Название параметра</span>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <span class="text-muted fs-4.4 me-3">Значение параметра</span>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
-                                        </div>
-                                        <button class="btn btn-link p-1 btn-search"></button>
-                                    </div>
-                                </div>
-                                <div class="row row-cols-2 gx-0 fs-4.4">
-                                    <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
-                                        <li class="nav-item-3" role="presentation">
-                                            <button class="nav-link-3 active p-3 border" id="option-1-tab" data-bs-toggle="tab" data-bs-target="#option-1" type="button" role="tab" aria-controls="option-1" aria-selected="true">Диагональ</button>
-                                        </li>
-                                        <li class="nav-item-3" role="presentation">
-                                            <button class="nav-link-3 p-3 border" id="option-2-tab" data-bs-toggle="tab" data-bs-target="#option-2" type="button" role="tab" aria-controls="option-2" aria-selected="false">Память</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="option-1" role="tabpanel" aria-labelledby="option-1">
-                                            <div class="border p-3">27 дюймов</div>
-                                            <div class="border p-3">54 дюймов</div>
-                                            <div class="border p-3">27 дюймов</div>
-                                            <div class="border p-3">54 дюймов</div>
-                                            <div class="border p-3">27 дюймов</div>
-                                            <div class="border p-3">54 дюймов</div>
-                                        </div>
-                                        <div class="tab-pane fade" id="option-2" role="tabpanel" aria-labelledby="option-2">
-                                            <div class="border p-3">16гБ</div>
-                                            <div class="border p-3">16гБ</div>
-                                            <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum assumenda!
-                                                Deleniti optio minus eius?</div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="fs-4.4 fw-medium col-6 overflow-auto" style="height: 40rem;">
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Диагональ</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
                             </div>
-                            <div class="tab-pane fade" id="second" role="tabpanel">
-                                <div class="row row-cols-2 pt-3 pb-2 border-bottom">
-                                    <div>
-                                        <span class="text-muted fs-4.4 me-3">Название параметра</span>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionModal">Добавить</button>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <span class="text-muted fs-4.4 me-3">Значение параметра</span>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOptionValueModal">Добавить</button>
-                                        </div>
-                                        <button class="btn btn-link p-1 btn-search"></button>
-                                    </div>
-                                </div>
-                                <div class="row row-cols-2 gx-0 fs-4.4">
-                                    <ul class="nav nav-tabs-3 flex-column fw-medium" id="myTab" role="tablist">
-                                        <li class="nav-item-3" role="presentation">
-                                            <button class="nav-link-3 active p-3 border" id="option-3-tab" data-bs-toggle="tab" data-bs-target="#option-3" type="button" role="tab" aria-controls="option-3" aria-selected="true">Цвет</button>
-                                        </li>
-                                        <li class="nav-item-3" role="presentation">
-                                            <button class="nav-link-3 p-3 border" id="option-4-tab" data-bs-toggle="tab" data-bs-target="#option-4" type="button" role="tab" aria-controls="option-4" aria-selected="false">Размер</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="option-3" role="tabpanel" aria-labelledby="option-3">
-                                            <div class="border p-3">зеленый</div>
-                                            <div class="border p-3">54 дюймов</div>
-                                            <div class="border p-3">27 дюймов</div>
-                                        </div>
-                                        <div class="tab-pane fade" id="option-4" role="tabpanel" aria-labelledby="option-4">
-                                            <div class="border p-3">16гБ</div>
-                                            <div class="border p-3">16гБ</div>
-                                            <div class="border p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deserunt officia, voluptate nobis possimus reprehenderit iusto, aliquam necessitatibus molestiae pariatur ipsam vitae incidunt magni, earum assumenda!
-                                                Deleniti optio minus eius?</div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor omnis, molestiae adipisci natus nobis expedita maxime modi ducimus perspiciatis quam non, dolorem cum similique doloribus debitis quidem odit? Consequatur.</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
+                            </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Диагональ</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
+                            </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor omnis, molestiae adipisci natus nobis expedita maxime modi ducimus perspiciatis quam non, dolorem cum similique doloribus debitis quidem odit? Consequatur.</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
+                            </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Диагональ</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
+                            </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor omnis, molestiae adipisci natus nobis expedita maxime modi ducimus perspiciatis quam non, dolorem cum similique doloribus debitis quidem odit? Consequatur.</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
+                            </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Диагональ</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
+                            </div>
+                            <div class="p-3 border d-flex justify-content-between align-items-baseline">
+                                <span class="w-50 pe-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor omnis, molestiae adipisci natus nobis expedita maxime modi ducimus perspiciatis quam non, dolorem cum similique doloribus debitis quidem odit? Consequatur.</span>
+                                <input class="form-select w-50" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="7">
+                                    <option value="12">
+                                    <option value="24">
+                                </datalist>
                             </div>
                         </div>
                     </div>
